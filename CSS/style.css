@@ -1,44 +1,41 @@
-
 body {
-    margin-left: 100px;
-    margin-right: 100px;
+    max-width: 85ch;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "martel", Helvetica, sans-serif, Arial;
     color: #2B394A;
-    background-color: #F5F5F5;
+    background-color: #F5F5F5;    
 }
 
-h1, h2, h3, h4, h5, h6 {
+#page_wrap {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content {
+    max-width: 75ch;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+footer {
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+}
+
+h1, h2 {
     text-align: center;
 }
 
-p {
+p, ul {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1,5;
 }
 
-article > p {
-    padding-left: 50px;
-    padding-right: 50px;
+article > p, ul {
+    padding-bottom: 30px;
 }
 
-p.overskrift {
-    font-weight: bold;
-    margin-top: 25px;
-}
-
-#page_wrap {
-    position: relative;
-    min-height: 95vh;
-}
-
-#content {
-    padding-bottom: 2,5ch;
-}
-
-footer {
-    position: absolute;
-    height: 2,5ch;
-    bottom: 0;
-    width: 100%;
-}
