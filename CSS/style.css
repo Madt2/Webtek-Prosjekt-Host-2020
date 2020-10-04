@@ -43,6 +43,25 @@ p, ul {
     line-height: 1,5;
 }
 
+table, td, th {  
+    border: 1px solid black;
+    text-align: left;
+}
+  
+th {
+  background-color: #806f6f;
+  color: white;
+}
+  
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    padding: 15px;
+}
+
 article > p, ul, .image {
     padding-bottom: 30px;
 }
@@ -53,3 +72,4 @@ article > p, ul, .image {
     margin-right: auto;
     max-height: 500px;
 }
+
