@@ -82,22 +82,29 @@
                         Galleri-siden skal inneholde et utvalg av bilder som viser frem Ontap.
                         Der er det blant annet bilder fra ølbryggingsprosessen og resultatene.
                         Selve bildene på siden skal være like store kvadratiske thumbnails av
-                        bildene slik at siden laster inn raskt. Her er en mockup av hele galleri-siden:
+                        bildene slik at siden laster inn raskt. På en standard skjerm skal bildene
+                        være i et 3 x 4(denne varierer med antall bilder. Foreløbig er det 10 bilder,
+                        dermed er det foreløbig 4 i y retning) grid, med avstand på 14px mellom
+                        thumbnailene og marg på 55px på høyre og venstre side. På større skjermer øker
+                        størrelsen på margen. Her er en mockup av hele galleri-siden:
                     </p>
                     <img class="image" src="img/Galleri.png" alt="En mockup av galleri siden.">
                     <p>
-                        Bildene skal øke litt i størrelse når musepekeren er over et bilde.
-                        Senterpunktet til bildet skal holde seg på samme sted når bilde øker
-                        i størrelse. Det skal ta et halvt sekund for bilde å øke i størrelse
+                        Bildene skal øke med 18px (9 px i hver retning) i størrelse når musepekeren
+                        er over et bilde. Senterpunktet til bildet skal holde seg på samme sted når
+                        bilde øker i størrelse. Det skal ta et halvt sekund for bilde å øke i størrelse
                         (dette kan hende endres senere). Her er et eksempel på dette:
                     </p>
                     <img class="image" src="img/Galleri_bilde_highlight.png" alt="En mockup av galleri siden når musepekeren er over bilde.">
                     <p>
                         Thumbnailsene skal linke til en visning av det originale bildet når
                         man trykker på det. Bilde skal da vises i sitt originale oppløsning og
-                        størrelseformat. Ved siden av er det knapper for å gå til neste eller
-                        forrige bilde, og resten av siden utenom banneren får et mørkt filter
-                        for å sette bildet i fokus. Her er mockup av det:
+                        størrelseformat. Rundt skal det være en ramme som er like høy som bildet,
+                        men er 130px større i venstre og høyre retning. Midt mellom kanten til rammen
+                        og bildet skal det være knapper for å gå til neste bilde på høyre og
+                        forrige bilde på venstre side. Knappene skal være midtstilt på y akse i rammen.
+                        Resten av siden utenom banneren får et mørkt filter or å sette bildet i fokus. 
+                        Her er mockup av det:
                     </p>
                     <img class="image" src="img/Bilde_fullstørrelse_visning.png" alt="En mockup av hvordan visning av original bildene vil se ut">
 
