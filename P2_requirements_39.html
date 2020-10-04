@@ -118,35 +118,96 @@
                     </p>
                     
                     <img class="image" src="img/generic.png" alt="Generisk bilde av nettsiden"/>
-                    <h3>Innhold for Hver Side</h3>
 
-                    <h4>Fremside</h4>
+                    <h3>Innhold</h3>
+
+                    <h4>Startside.html:</h4>
                     <p>
-                        Tekst
+                        Dette er siden som vises når man først åpner nettsiden. 
+                        Her vil vi ha et stort bilde i bakgrunnen som dekker hele skjermen med Ontap-logoen foran. 
+                        Bakgrunnsbildet kommer til å ha en blur-effekt slik at logoen fremheves mer. 
+                        Når du scroller nedover på siden vil banneret komme til syne, og enda lenger ned en overskrift hvor det står “Velkommen til Ontap”.
                     </p>
+                    <img class="image" src="img/forside.png" alt="mockup av forside"/>
 
-                    <h4>Om Oss</h4>
+                    <h4>om_oss.html:</h4>
                     <p>
-                        Tekst
+                        “Om oss”-siden skal ha som formål å fortelle om Ontap. 
+                        Her vil vi ha tekst om historien til Ontap, hvordan interessegruppen er nå, og også om fremtidsplanene til ontap.
                     </p>
-
-                    <h4>Kontakt</h4>
                     <p>
-                        Tekst
+                        Historiedelen vil i hovedsak bestå av når, hvem og hvorfor Ontap ble et tilbud. 
+                        Dette vil være interessant for leseren som dermed kan få et inntrykk av at Ontap har vært drevet i noen år. 
                     </p>
-
-                    <h4>Oppskrifter</h4>
                     <p>
-                        Tekst
+                        Det som er mest interessant er nåtiden, her vil vi få frem informasjon om hvordan interessegruppen driftes per dag dato. 
+                        Her vil det stå litt generell informasjon om hva Ontap går ut på, hvor man kan få utstyr, leder og antall medlemmer som er med i Slacken.
                     </p>
+                    <p>
+                        Sist vil vi kort ha med litt om fremtiden. Her må vi få mer informasjon fra klienten selv, 
+                        men ser for oss at informasjon om at man vil ha mål om å brygge x antall øl i året eller ha konkurranser innad i bryggelaget kan være relevant.
+                    </p>
+                    <p>
+                        Dette er en side som hovedsakelig vil bestå av mye tekst og ikke mye “fancy”, 
+                        men vi vil prøve å spice opp siden med litt relevante bilder for å holde leseren interessert. 
+                        Det skal være et slideshow bestående av tre til fire bilder hvor hvert bilde får fem sekunder før et nytt et vises. 
+                        For å få dette til å virke skal vi bruke Javascript. Dette vil være plassert øverst i høyre hjørnet på siden. 
+                    </p>
+                    <p>
+                        Midt på siden vil det stå en “Om oss” overskrift som vil være bold med en skriftstørrelse på 70 pt. 
+                        Det vil så være tre underoverskrifter som alle har en skriftstørrelse på 40 pt. 
+                        Så vil selve avsnittene under underoverskriftene være bygd opp med 30 pt i skriftstørrelse. 
+                    </p>
+                    <p>
+                        Slik tenker vi oss at siden vil se (innholdet på avsnittene er bare eksempel foreløpig, men vil endres):
+                    </p>
+                    <img class="image" src="img/om_oss.png" alt="mockup av om_oss.html"/>
 
-                    <h4>Galleri</h4>
+                    <h4>Kontakt.html:</h4>
+                    <p>
+                        Kontakt-siden skal ha en hyperlink til Ontap sin Slack-kanal og en mailto: link til deres epost.
+                         Slack kanalen og eposten vil ha icon bilder som også vil linke til eposten og Slack-kanalen. 
+                         Icon bildene vil være 69x68px. På siden vil det være et epost skjema men den vil ikke være funksjonell da dette krever PHP 
+                         som vi ikke kan bruke for dette prosjektet. Det vil i stedet være en plassholder for Ontap å evt endre på senere.
+                          Input boksene for epostskjema vil ha fargen (F1F1F1). Henvendelse boksen vil ha 80% width av siden og epost/navn boksene 
+                          vil være 462x74 px. Alt innholdet vil være innenfor 80% width da margen vil være 10%. Målet med kontaktsiden er å gi en oversikt 
+                        over kontakt-metodene til Ontap og for å kunne spørre om lån av utstyr som gjøres via Slack/epost.
+                         Kontakt-siden vil linkes fra banneret og i footeren for å være enkelt tilgjengelig. 
+                    </p>
+                    <img class="image" src="img/kontakt.png" alt="mockup av kontakt.html"/>
+
+                    <h4>Oppskrifter.html</h4>
+                    <p>
+                        Oppskrift siden viser alle oppskriftene som er laget av medlemmene i Ontap. 
+                        Øverst på siden vil det være en liste med kravene for at det skal være et offisielt Ontap øl. 
+                        Under vil alle de ulike Ontap ølene listes opp etter rekkefølgen de ble laget (eldst til yngst).
+                        Hver øl vil skrives inn i en lysegrå boks, i fargen #f1f1f1. Størrelse på boksen er 1310 x 265,
+                        og skal være sentrert i midten, og avstanden mellom boksene skal være 26px. Inne i boksene,
+                        til venstre, skal det være et bilde av etiketten til ølen. Den skal ligge 23px inn fra kanten
+                        av boksen og 31px avstand fra toppen og bunnen av boksen. Størrelsen på bilde er 217 x 323, 
+                        og det skal ha litt skygge. Til høyre for bildet vil det være en underoverskrift med navnet på ølen, 
+                        og under vil det være listet opp informasjon om ølen. Siden vil ha 10% marg og dytte innholdet til sentrum.
+
+                    </p>
+                    <img class="image" src="img/oppskrifter.png" alt="mockup av oppskrifter.html"/>
+                    <p>
+                        Rett over første oppskriftsboks, skal det være en knapp til høyre som heter “Alkoholkalkulator”. 
+                        Den skal ha en størrelse på 270 x 85 og skal være i fargen #0D5474. Skriften skal være i fargen #fffff
+                        og være i størrelsen 30 pt, bold. Når du klikker på denne knappen skal en alkoholkalkulator dukke opp midt på skjermen, 
+                        mens resten av bakgrunnen blir mørkere. Den vil ha en størrelse på 855 x 615. Overskriften her vil være midtstilt og 40px ned fra toppen.
+                        Under vil det være en boks i fargen #f1f1f1 med størrelse 750 x 255. Inne i denne skal det være to input bokser med størrelse 245 x 65 
+                        og en tynn kant i fargen #C4C4C4. Under denne grå boksen skal det være en knapp, “Alkohol i volum”, i fargen #0D5474 og størrelse 285  x 85. 
+                        Til høyre for denne knappen skal alkoholprosenten vises. Den skal ha skriftstørrelse 70 pt og være i fargen #0D5474. 
+                    </p>
+                    <img class="image" src="img/alkoholkalkulator.png" alt="mockup av alkoholkalkulator.js"/>
+
+                    <h4>Galleri.html</h4>
                     <p>
                         Galleri-siden skal inneholde et utvalg av bilder som viser frem Ontap.
                         Der er det blant annet bilder fra ølbryggingsprosessen og resultatene.
                         Selve bildene på siden skal være like store kvadratiske thumbnails med
                         størrelse 364px x 364px av bildene slik at siden laster inn raskt. På 
-                        en standard skjerm skal bildene være i et 3 x 4(denne varierer med 
+                        en standard skjerm skal bildene være i et 3 x 4(dette varierer med 
                         antall bilder. Foreløbig er det 10 bilder, dermed er det foreløbig 4 i
                         y retning) grid, med avstand på 14px mellom thumbnailene og marg 10% på
                         høyre og venstre side. Her er en mockup av hele galleri-siden:
@@ -160,7 +221,7 @@
                     </p>
                     <img class="image" src="img/Galleri_bilde_highlight.png" alt="En mockup av galleri siden når musepekeren er over bilde.">
                     <p>
-                        Thumbnailsene skal linke til en visning av det originale bildet når
+                        Thumbnailene skal linke til en visning av det originale bildet når
                         man trykker på det. Bilde skal da vises i sitt originale oppløsning og
                         størrelseformat. Rundt skal det være en ramme som er like høy som bildet,
                         men er 130px større i venstre og høyre retning. Midt mellom kanten til rammen
@@ -171,10 +232,12 @@
                     </p>
                     <img class="image" src="img/Bilde_fullstørrelse_visning.png" alt="En mockup av hvordan visning av original bildene vil se ut">
 
-                    <h4>Sidekart</h4>
+                    <h4>Sidekart.html</h4>
                     <p>
-                        Tekst
+                        Vi skal ha et sidekart som er tilgjengelig i footeren, 
+                        for å tilby en mer streamline og oversiktlig navigering av siden til de som ønsker det.
                     </p>
+                    <img class="image" src="img/sidekart.png" alt="En mockup av sidekart.html">
 
                     <h3>Minimumkrav Javascript</h3>
                     <p>
