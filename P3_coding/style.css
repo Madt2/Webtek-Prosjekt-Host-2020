@@ -18,3 +18,9 @@ footer {
     height: 200px;
     background-color: #F1F1F1;
     }
+
+.footer{
+    margin: 40px;
+    width: 225px;
+    float: left;
+}
