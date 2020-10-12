@@ -8,7 +8,13 @@ header {
     height: 100px;
     background-color: #0D5474;
     }
-    
+
+.box_header {
+    width: 20%;
+    height: 100px;
+    float: left;
+}
+
 content {
     
 }
