@@ -14,15 +14,64 @@ html{
 }
 
 header {
+    position: relative;
     width: 100%;
     height: 100px;
     background-color: #0D5474;
+    font-family: "Source Sans Pro", "Source Serif Pro", Arial;
+    font-size: 20pt;
+    color: #ffffff;
     }
 
-.box_header {
-    width: 20%;
+#tilbake_til_online {
+    position: absolute;
+    z-index: 2;
+    font-size: 14pt;
+}
+
+#box1 {
+    position: absolute;
+    margin: 0 0 0 0;
     height: 100px;
-    float: left;
+    width: 20%;
+    text-align: center;
+    line-height: 100px;
+}
+
+#box2 {
+    position: absolute;
+    margin: 0 0 0 20%;
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    line-height: 100px;
+}
+
+#box3 {
+    position: absolute;
+    margin: 0 0 0 40%;;
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    line-height: 100px;
+}
+
+#box4{
+    position: absolute;
+    margin: 0 0 0 60%;
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    line-height: 100px;
+}
+
+#box5{
+    position: relative;
+    margin: 0 0 0 80%;
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    line-height: 100px;
 }
 
 content {
