@@ -8,7 +8,13 @@ header {
     height: 100px;
     background-color: #0D5474;
     }
-    
+
+.box_header {
+    width: 20%;
+    height: 100px;
+    float: left;
+}
+
 content {
     
 }
@@ -25,27 +31,36 @@ footer {
     width: 225px;
 }
 
+#footer_logo{
+    position: absolute;
+    margin: 50px 0 0 30px;
+}
+
+#footer_logo_img{
+    border-radius: 50%;
+}
+
 #footer1 {
     position: absolute;
-    margin: 0 0 0 10%;
+    margin: 50px 0 0 10%;
 }
 
 #footer2 {
     position: absolute;
-    margin: 0 0 0 30%;
+    margin: 50px 0 0 30%;
 }
 
 #footer3{
     position: absolute;
-    margin: 0 0 0 50%;;
+    margin: 50px 0 0 50%;;
 }
 
 #footer4{
     position: absolute;
-    margin: 0 0 0 60%;
+    margin: 50px 0 0 60%;
 }
 
 #footer5{
-    position: relative;
-    margin: 0 0 0 90%;
+    position: absolute;
+    margin: 50px 0 0 90%;
 }
