@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #0D5474;
+    }
+    
+content {
+    
+}
+    
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #F1F1F1;
+    }
+
+.footer {
+    margin: 40px;
+    width: 225px;
+}
+
+#footer1 {
+    position: absolute;
+    margin: 0 0 0 10%;
+}
+
+#footer2 {
+    position: absolute;
+    margin: 0 0 0 30%;
+}
+
+#footer3{
+    position: absolute;
+    margin: 0 0 0 50%;;
+}
+
+#footer4{
+    position: absolute;
+    margin: 0 0 0 60%;
+}
+
+#footer5{
+    position: relative;
+    margin: 0 0 0 90%;
+}
