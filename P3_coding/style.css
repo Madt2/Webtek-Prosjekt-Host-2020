@@ -26,7 +26,27 @@ header {
     font-family: "Source Sans Pro", "Source Serif Pro", Arial;
     font-size: 20pt;
     color: #ffffff;
-    }
+}
+
+header a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+header a:hover {
+    opacity: 75%;
+}
+  
+header a:active {
+    color: #ffffff;
+}
+
+
 
 #tilbake_til_online {
     position: absolute;
