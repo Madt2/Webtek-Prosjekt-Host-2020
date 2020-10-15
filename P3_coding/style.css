@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
 html{
     min-height: 100%;
     position: relative;
@@ -21,7 +26,27 @@ header {
     font-family: "Source Sans Pro", "Source Serif Pro", Arial;
     font-size: 20pt;
     color: #ffffff;
-    }
+}
+
+header a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+header a:hover {
+    opacity: 75%;
+}
+  
+header a:active {
+    color: #ffffff;
+}
+
+
 
 #tilbake_til_online {
     position: absolute;
@@ -87,40 +112,40 @@ footer {
     }
 
 .footer {
-    margin: 40px;
-    width: 225px;
+    width: 10%;
 }
 
 #footer_logo{
     position: absolute;
-    margin: 50px 0 0 30px;
+    margin: 50px 0 0 5%;
 }
 
 #footer_logo_img{
     border-radius: 50%;
+    position: absolute;
 }
 
 #footer1 {
     position: absolute;
-    margin: 50px 0 0 10%;
+    margin: 50px 0 0 15%;
 }
 
 #footer2 {
     position: absolute;
-    margin: 50px 0 0 30%;
+    margin: 50px 0 0 36%;
 }
 
 #footer3{
     position: absolute;
-    margin: 50px 0 0 50%;;
+    margin: 50px 0 0 57%;;
 }
 
 #footer4{
     position: absolute;
-    margin: 50px 0 0 60%;
+    margin: 50px 0 0 73%;
 }
 
 #footer5{
     position: absolute;
-    margin: 50px 0 0 90%;
+    margin: 50px 0 0 89%;
 }
