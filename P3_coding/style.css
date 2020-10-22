@@ -1,3 +1,6 @@
+/* ----------------------------------------
+        CSS CODE FOR FORMATING THE PAGE
+   ---------------------------------------- */
 * {
     padding: 0;
     margin: 0;
@@ -18,91 +21,60 @@ html{
     padding-bottom: 200px;
 }
 
-header {
+content {
+    
+}
+/* -----------------------------
+        CSS CODE FOR HEADER
+   ----------------------------- */
+.header {
+    /* Positioning-elements of header */
     position: relative;
-    width: 100%;
-    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 75px;
+
+    /* Styling-elements of header */
     background-color: #0D5474;
     font-family: "Source Sans Pro", "Source Serif Pro", Arial;
     font-size: 20pt;
     color: #ffffff;
 }
 
-header a:link {
+#logo {
+    align-self: baseline;
+}
+
+/* Styling for header-links */
+header a:link, header a:active, header a:visited {
     color: #ffffff;
     text-decoration: none;
 }
 
-header a:visited {
-    color: #ffffff;
-    text-decoration: none;
-}
-  
 header a:hover {
     opacity: 75%;
 }
-  
-header a:active {
-    color: #ffffff;
+
+#logo a:hover {
+    opacity: 100%;
 }
-
-
 
 #tilbake_til_online {
     position: absolute;
     z-index: 2;
-    font-size: 14pt;
+    font-size: 10pt;
 }
 
-#box1 {
-    position: absolute;
-    margin: 0 0 0 0;
-    height: 100px;
-    width: 20%;
-    text-align: center;
-    line-height: 100px;
-}
+/* -----------------------------
+        CSS CODE FOR CONTENT
+   ----------------------------- */
 
-#box2 {
-    position: absolute;
-    margin: 0 0 0 20%;
-    height: 100px;
-    width: 20%;
-    text-align: center;
-    line-height: 100px;
-}
-
-#box3 {
-    position: absolute;
-    margin: 0 0 0 40%;;
-    height: 100px;
-    width: 20%;
-    text-align: center;
-    line-height: 100px;
-}
-
-#box4{
-    position: absolute;
-    margin: 0 0 0 60%;
-    height: 100px;
-    width: 20%;
-    text-align: center;
-    line-height: 100px;
-}
-
-#box5{
-    position: relative;
-    margin: 0 0 0 80%;
-    height: 100px;
-    width: 20%;
-    text-align: center;
-    line-height: 100px;
-}
-
-content {
-    
-}
-    
+/* -----------------------------
+        CSS CODE FOR FOOTER
+   ----------------------------- */
 footer {
     position: absolute;
     bottom: 0;
