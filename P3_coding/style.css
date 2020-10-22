@@ -111,45 +111,26 @@ footer {
     background-color: #F1F1F1;
     }
 
-.footer {
-    width: 10%;
+#footerFlex {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#footer_logo{
-    position: absolute;
-    margin: 50px 0 0 5%;
-}
-
-#footer_logo_img{
+#footer_logo_img {
     border-radius: 50%;
-    position: absolute;
 }
 
-#footer1 {
+#footer5 {
     position: absolute;
-    margin: 50px 0 0 15%;
+    right: 5px;
+    top: 0;
+    z-index: 1000;
 }
-
-#footer2 {
-    position: absolute;
-    margin: 50px 0 0 36%;
-}
-
-#footer3{
-    position: absolute;
-    margin: 50px 0 0 57%;;
-}
-
-#footer4{
-    position: absolute;
-    margin: 50px 0 0 73%;
-}
-
-#footer5{
-    position: absolute;
-    margin: 50px 0 0 89%;
-}
-
 #oppskriftbody{
 margin: 20px;
 }
