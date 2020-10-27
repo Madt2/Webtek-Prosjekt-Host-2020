@@ -43,7 +43,7 @@ function addImages() {
     imgContainer.setAttribute("class", "img-container");
     const img = document.createElement("img");
     img.src = images[i];
-    img.style = "width:300%; height: 300%;";
+    img.style = "width:100%; height: 100%;";
     imgContainer.append(img);
     container.append(imgContainer);
   }
