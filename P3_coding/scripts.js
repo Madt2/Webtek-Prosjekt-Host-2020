@@ -30,11 +30,13 @@ var headerHTML =
                '</div>'+
                '<div class="footer" id="footer1">'+
                   '<h4>Laget av</h4>'+
-                  '<p>Håvard Kveen, <br> Una Førde Schjetne, <br> Emil Gillingham Aukner, <br> Mats Klevstad og Tor Madsen</p>'+
+                  '<p>Håvard Kveen, Tor Madsen <br> Una Førde Schjetne, Mats Klevstad <br> og Emil Gillingham Aukner </p>'+
                '</div>'+
                '<div class="footer" id="footer2">'+
                   '<h4>Kontakt oss</h4>'+
-                  '<p>Ta kontakt med ontap ved å klikke her: <a href="kontakt.html">Kontakt</a></p>'+
+                  '<p>Ta kontakt med ontap'+
+                  '<br>'+ 
+                  'ved å klikke her: <a href="kontakt.html">Kontakt</a></p>'+
                '</div>'+
                '<div class="footer" id="footer3">'+
                     '<h4>Slack</h4>'+
@@ -44,7 +46,9 @@ var headerHTML =
                 '</div>'+
                 '<div class="footer" id="footer4">'+
                     '<h4>Sideoversikt</h4>'+
-                    '<p>For å gå til sidekart, klikk her: <a href="index.html">Sidekart</a></p>'+
+                    '<p>For å gå til sidekart,'+
+                    '<br>'+ 
+                    'klikk her: <a href="index.html">Sidekart</a></p>'+
                 '</div>'
             '</div>'
         '</footer>';
