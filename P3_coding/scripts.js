@@ -22,7 +22,7 @@ var headerHTML =
  var footerHTML = 
         '<footer>'+
             '<div id="footer5">'+
-               '<h4><a href="h1">Tilbake til toppen</a></h4>'+
+               '<h4><a href="#header">Tilbake til toppen</a></h4>'+
             '</div>'+
             '<div id="footerFlex">'+
                '<div class="footer" id="footer_logo">'+
