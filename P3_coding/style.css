@@ -1,51 +1,178 @@
+/* ----------------------------------------
+        CSS CODE FOR FORMATING THE PAGE
+   ---------------------------------------- */
 * {
     padding: 0;
     margin: 0;
 }
 
-header {
-    width: 100%;
-    height: 100px;
-    background-color: #0D5474;
-    }
-    
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+.wrapper{
+    height: 100%;
+    padding-bottom: 125px;
+}
+
 content {
     
 }
-    
-footer {
+/* -----------------------------
+        CSS CODE FOR HEADER
+   ----------------------------- */
+.header {
+    /* Positioning-elements of header */
     position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 75px;
+
+    /* Styling-elements of header */
+    background-color: #0D5474;
+    font-family: "Source Sans Pro", "Source Serif Pro", Arial;
+    font-size: 20pt;
+    color: #ffffff;
+}
+
+#logo {
+    align-self: baseline;
+}
+
+/* Styling for header-links */
+header a:link, header a:active, header a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:hover {
+    opacity: 75%;
+}
+
+#logo a:hover {
+    opacity: 100%;
+}
+
+#tilbake_til_online {
+    position: absolute;
+    z-index: 2;
+    font-size: 10pt;
+}
+
+/* -----------------------------
+        CSS CODE FOR CONTENT
+   ----------------------------- */
+
+   .button {
+    background-color: #0D5474;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+   }
+
+/* -----------------------------
+        CSS CODE FOR FOOTER
+   ----------------------------- */
+footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: 200px;
+    height: 125px;
     background-color: #F1F1F1;
     }
 
-.footer {
-    margin: 40px;
-    width: 225px;
-}
-
-#footer1 {
-    position: absolute;
-    margin: 0 0 0 10%;
-}
-
-#footer2 {
-    position: absolute;
-    margin: 0 0 0 30%;
-}
-
-#footer3{
-    position: absolute;
-    margin: 0 0 0 50%;;
-}
-
-#footer4{
-    position: absolute;
-    margin: 0 0 0 60%;
-}
-
-#footer5{
+#footerFlex {
+    width: 100%;
+    height: 125px;
     position: relative;
-    margin: 0 0 0 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
+
+#footer_logo_img {
+    border-radius: 50%;
+}
+
+#footer5 {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* -----------------------------
+    CSS CODE FOR OPPSKRIFTER
+   ----------------------------- */
+#info {
+    text-align: center;
+    list-style: inside;
+    margin-bottom: 10px;
+}
+.outer {
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-bottom: 25px;
+}
+#ettiket {
+    width: 160px;
+    height: 180px;
+    padding: 15px;
+}
+
+#beer-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.text {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+.secondBlock{
+    margin-left: 100px;
+}
+#oppskriftbody{
+margin: 20px;
+}
+#alkoholknapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 80vw;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .outer, #alkoholknapp {
+        width: 80%;
+        margin-left: 10vw;
+    }}
+
+@media only screen and (max-width: 900px) {
+    #alkoholknapp {
+        justify-content: center;
+    }}
