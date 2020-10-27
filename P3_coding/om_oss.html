@@ -6,57 +6,59 @@
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
         <title>Om oss</title>
         <style>
-            h1{
-               text-align: center;
-               }
-           
-           #historie{
-              padding: 25px;
-           }
-           #nåtid{
-              padding: 25px;
-           }
+        
+           .avsnitt{
+              padding: 10px;
+              width: 60vw;
+              margin-left: 20vw;
 
-           #fremtid{
-              padding: 25px;
            }
            #slideshow-container{
             position: relative;
             float:right;
-            width: 100px;
-            height: 100px;
-            border: 15px solid green;
-            padding: 50px;
-            
+            width: 225px;
+            height: 299px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-right: 20vw;
+            margin-top: 40px;
+            margin-left: 20px;
            }
 
+            @media only screen and (max-width: 700px) {
+            #slideshow-container {
+              display: none;
+         }
+           }
+  
     
         </style>
     </head>
     <body>
+      <div class="wrapper">
       <div id="header"></div>
         <content>
             
 
             <h1>Om oss </h1>
 
-            <div id="slideshow-container">Her kommer slideshow!</div>
+            <div id="slideshow-container"></div>
 
           
-            <div id=historie>
+            <div class="avsnitt">
             <h2>Historie</h2>
             <p>Interessegruppen On Tap ble startet mot slutten av 2017 da flere informatikere med interesse for å brygge øl manglet et tilbud. Det hele starten med en mail til Hovedstyret om pengestøtte, noe som ble innfridd, og dermed kunne de da 35 medlemme nyte godt av nytt bryggekit.
                 Aslak Hollund var med på å starte Ontap, og var leder frem til nåverende leder, Hjalti, overtok. 
+                
             </p>
             </div>
 
-            <div id=nåtid>
+            <div class= "avsnitt">
             <h2>Nåtid</h2>
-            <p>Per dags dato driftes interessegruppen med Hjalti Hjaltason som leder. On Tap bruker for det meste Slack for å holde kontakt. Her er det passert 100 medlemmer som alle har en interessse for øl-brygging.  On Tap er interessegruppen for deg som brenner for å brygge øl, har lyst til å lære seg det, eller vil bare bli kjent med en mengde flotte mennesker som har samme interesse som deg, nemlig øl. 
-                Det krever ikke noe forkunnskaper for å bli med, og skulle du trenge hjelp er vi svært hjelpsomme. Alt av utstyr har vi innelåst i et lager på Gløshaugen. Skulle du ønske å låne utstyr kan du sjekke ut *KONTAKT*.  </p>
+            <p>On Tap er interessegruppen for deg som brenner for å brygge øl, har lyst til å lære seg det, eller vil bare bli kjent med en mengde flotte mennesker som har samme interesse som deg, nemlig øl. Per dags dato driftes interessegruppen med Hjalti Hjaltason som leder. On Tap bruker for det meste Slack for å holde kontakt med medlemmene våres. Her har vi passert 100 medlemmer, og hvor alle har en felles interessse for ølbrygging.  
+                Det krever ikke noe forkunnskaper for å bli med, og skulle du trenge hjelp er vi svært hjelpsomme. Alt av utstyr har vi innelåst i et lager på Gløshaugen. Skulle du ønske å låne utstyr kan du sjekke ut <a href="kontakt.html">kontakt.</a>  </p>
             </div>
 
-            <div id=fremtid>
+            <div class= "avsnitt">
             <h2>Fremtid?</h2>
             <p>Våre planer for nærmeste framtid er å forbedre tilbudet vårt samtidig som vi bygger opp kompetansen hos medlemmene våre. Videre ønsker vi også å bli en ressurs for komiteene, i tilfelle de på et tidspunkt ønsker å benytte vår kompetanse for et av sine arrangementer eller prosjekter. </p>
             </div>
@@ -69,5 +71,6 @@
 
       <script src= slideshow.js></script>
       <script src="scripts.js" onload="header_and_footer()"></script>
+      </div>
     </body>
 </html>

@@ -3,9 +3,10 @@
 
 
 const images = [
-    "https://www.lunsj.no/18804-large_default/kronenbourg-1664-blanc.jpg",
-    "https://res.cloudinary.com/norgesgruppen/image/upload/c_pad,b_white,f_auto,h_900,q_50,w_900/v1587169380/Product/75032814.jpg",
-    "https://dk3wdpvyk5ksy.cloudfront.net/wp-content/uploads/sites/375/2020/06/03002311/100085-1.jpg"         //Legger bare til tullebilder før de ekte får en link
+    src = "../img/brygging_slide1.jpg",
+    src = "../img/brygging_slide2.jpg" ,
+    src = "../img/brygging_slide3.jpg", 
+    src = "../img/brygging_slide4.jpg"          //Legger bare til tullebilder før de ekte får en link
 ];
 
 
