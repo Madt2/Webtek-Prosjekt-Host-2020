@@ -73,6 +73,11 @@ header a:hover {
     position: absolute;
     z-index: 2;
     font-size: 10pt;
+
+}
+
+#tilbake_tekst{
+    color: #FAB657;
 }
 
 /* -----------------------------
@@ -182,3 +187,71 @@ footer {
     #alkoholknapp {
         justify-content: center;
     }}
+
+ /*-----------------------------
+    CSS CODE FOR KONTAKT
+   ----------------------------- */
+    .kontakt_content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+     }
+
+     .kontakt_text {
+        font-family: "Roboto", Arial, sans-serif;
+        height: 100%;
+        width: 60%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 0;
+     }
+
+     textarea {
+        width: 100%;
+        height: 300px;
+        font-family: "Roboto", "Source Serif Pro", Arial;
+     }
+
+     .slack {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 5% 0;
+     }
+
+     #slack_icon {
+        margin-right: 10px;
+     }
+
+     #email_icon {
+        margin-right: 10px;
+     }
+
+     .email {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 2.5% 0;
+     }
+
+     #kontakt_epost{
+        padding: 5px 5px 5px 5px; 
+     }
+
+     #kontakt_fornavn{
+        padding: 5px 5px 5px 5px; 
+     }
+
+     #kontakt_submit {
+        margin: 5px 0 0 0;
+     }
+
+     #kontakt_form {
+        position: relative;
+        align-self: center;
+        width: 100%;
+        height: auto;
+        bottom: 20px;
+     }

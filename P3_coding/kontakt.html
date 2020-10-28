@@ -1,132 +1,64 @@
 <!DOCTYPE html>
 <html lang="nb">
-    <head>
+   <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-        <style>
-         .kontakt_content {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;  
-         }
-
-         .kontakt_text {
-            font-family: "Source Sans Pro", "Source Serif Pro", Arial;
-            height: 100%;
-            width: 60%;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            z-index: 0;
-         }
-
-         textarea {
-            width: 100%;
-            height: 300px;
-            font-family: "Source Sans Pro", "Source Serif Pro", Arial;
-         }
-
-         .slack {
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            margin: 0 0 5% 0;
-         }
-
-         #slack_icon {
-            margin-right: 10px;
-         }
-
-         #email_icon {
-            margin-right: 10px;
-         }
-
-         .email {
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            margin: 0 0 2.5% 0;
-         }
-
-         #kontakt_epost{
-            padding: 5px 5px 5px 5px; 
-         }
-
-         #kontakt_fornavn{
-            padding: 5px 5px 5px 5px; 
-         }
-
-         #kontakt_submit {
-            margin: 5px 0 0 0;
-         }
-
-         form {
-            position: relative;
-            align-self: center;
-            width: 100%;
-            height: auto;
-            bottom: 20px;
-         }
-
-     </style>
-    </head>
-    <body>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <title>Ontap Kontakt</title>
+   </head>
+   <body>
       <div class="wrapper">
          <div id="header"></div>
-            <content class="kontakt_content">
-                  <div class="kontakt_text">
-                     <h1>Kontakt</h1>
-                     <br>
-                     <div class="slack">
-                        <a href="https://onlinentnu.slack.com/archives/C357EQS3U" target="_blank">
-                           <img id="slack_icon" src="../img/Slack.png" alt="Slack icon" height="40px" width="40px" >
-                        </a>
-                        <p id="slack_text">
-                           Trykk her for å bli med i vår slack kanal(<b>NB.</b> Må være medlem av Online sin slack for å bli med):
-                           <br>
-                           <a href="https://onlinentnu.slack.com/archives/C357EQS3U" target="_blank">https://onlinentnu.slack.com/archives/C357EQS3U</a>
-                           <br>
-                        </p>
-                        
-                     </div>
-                     
-                     <div class="email">
-                        <a href="mailto:ontap@online.ntnu.no" target="_blank">
-                           <img id="email_icon" src="../img/epost.png" alt="epost icon" height="40px" width="40px" >
-                        </a>
-                        
-                        <p>
-                           Hvis du ønsker kontakt med oss, send gjerne en mail til:
-                           <a href="mailto:ontap@online.ntnu.no">ontap@online.ntnu.no</a> 
-                           eller bruk skjema under:
-                        </p>
-                        
-                     </div>
+            <div class="kontakt_content">
+               <div class="kontakt_text">
+                  <h1>Kontakt</h1>
+                  <br>
+                  <div class="slack">
+                     <a href="https://onlinentnu.slack.com/archives/C357EQS3U" target="_blank">
+                       <img id="slack_icon" src="../img/Slack.png" alt="Slack icon" height="40" width="40" >
+                     </a>
 
-                     <form action="action.php" method="POST">
-                        <label for="kontakt_fornavn"><b>Fornavn:</b></label>
+                     <p id="slack_text">
+                        Trykk her for å bli med i vår slack kanal(<b>NB.</b> Må være medlem av Online sin slack for å bli med):
                         <br>
-                        <input type="text" name="fornavn" id="kontakt_fornavn" placeholder="Fornavn" size="50" required>
-                        <br><br>
-                        <label for="kontakt_epost"><b>E-post:</b></label>
+                        <a href="https://onlinentnu.slack.com/archives/C357EQS3U" target="_blank">https://onlinentnu.slack.com/archives/C357EQS3U</a>
                         <br>
-                        <input type="email" name="epost" id="kontakt_epost" placeholder="E-post" size="50" required>
-                        <br><br>
-                        <label for="kontakt_innhold"><b>Henvendelse:</b></label>
-                        <br>
-                        <textarea name="innhold" id="kontakt_innhold" placeholder="Din henvendelse her" required ></textarea>
-                        <br>
-                        <input class="button" id="kontakt_submit" type="submit">
-                     </form>
-
+                     </p>
                   </div>
-            </content>
+                     
+                  <div class="email">
+                     <a href="mailto:ontap@online.ntnu.no" target="_blank">
+                        <img id="email_icon" src="../img/epost.png" alt="epost icon" height="40" width="40" >
+                     </a>
+                        
+                     <p>
+                        Hvis du ønsker kontakt med oss, send gjerne en mail til:
+                        <a href="mailto:ontap@online.ntnu.no">ontap@online.ntnu.no</a> 
+                        eller bruk skjema under:
+                     </p>
+                  </div>
+               
+                  <form id="kontakt_form" action="action.php" method="POST">
+                     <label for="kontakt_fornavn"><b>Fornavn:</b></label>
+                     <br>
+                     <input type="text" name="fornavn" id="kontakt_fornavn" placeholder="Fornavn" size="50" required>
+                     <br><br>
+                     <label for="kontakt_epost"><b>E-post:</b></label>
+                     <br>
+                     <input type="email" name="epost" id="kontakt_epost" placeholder="E-post" size="50" required>
+                     <br><br>
+                     <label for="kontakt_innhold"><b>Henvendelse:</b></label>
+                     <br>
+                     <textarea name="innhold" id="kontakt_innhold" placeholder="Din henvendelse her" required ></textarea>
+                     <br>
+                     <input class="button" id="kontakt_submit" type="submit">
+                  </form>
+               </div>
+            </div>
          <div id="footer"></div>
-         </div>
+      </div>
          <script src="scripts.js" onload="header_and_footer()">
          </script>
-      </div>
-    </body>
+   </body>
 </html>

@@ -1,7 +1,7 @@
 var headerHTML =
         '<header>'+
             '<p id="tilbake_til_online">'+
-                '<a href="https://online.ntnu.no/hobbygroups">&#8592 Tilbake til Online</a></p>'+
+                '<a href="https://online.ntnu.no/hobbygroups" id="tilbake_tekst">&#8592 Tilbake til Online</a></p>'+
             '<div class="header">'+
                 '<div></div>'+
                 '<div><a href="om_oss.html">OM OSS</a></div>'+
@@ -34,7 +34,7 @@ var headerHTML =
                '</div>'+
                '<div class="footer" id="footer2">'+
                   '<h4>Kontakt oss</h4>'+
-                  '<p>Ta kontakt med ontap'+
+                  '<p>Ta kontakt med Ontap'+
                   '<br>'+ 
                   'ved å klikke her: <a href="kontakt.html">Kontakt</a></p>'+
                '</div>'+
