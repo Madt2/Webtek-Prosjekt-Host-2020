@@ -22,70 +22,91 @@ html{
     padding-bottom: 200px;
 
 }
-h1 {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-content {
-    /* font-family: 'Roboto','Times New Roman' 'Open Sans', 'Helvetica Neue', sans-serif; */
-}
 /* -----------------------------
         CSS CODE FOR HEADER
    ----------------------------- */
-.header {
-    /* Positioning-elements of header */
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
-    height: 75px;
 
-    /* Styling-elements of header */
-    background-color: #0D5474;
+/* Styling elements of navbar */
+header nav {
+    background: #0D5474;
     font-family: "Source Sans Pro", "Source Serif Pro", Arial;
-    font-size: 20pt;
-    color: #ffffff;
+    font-size: 15pt;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem grey;
 }
 
-#logo {
-    align-self: baseline;
+header nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Styling for header-links */
-header a:link, header a:active, header a:visited {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-header a:hover {
+header nav a:hover {
     opacity: 75%;
 }
 
-#logo a:hover {
-    opacity: 100%;
+/* positioning elements of navbar */
+header nav .skille {
+    display: none;
 }
 
-#tilbake_til_online {
+header nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Defining new positioning of elements in navbar when screensize is over 760px */
+@media screen and (min-width: 760px){
+    /* Defining positioning of header-elements */
+    header nav ul {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav li{
+        width: 20%;
+    }
+
+    /* Styling of the separation elements */
+    header nav .skille {
+        display: block;
+        border-left: 1px solid #fff;
+        padding: 0;
+        height: 30px;
+        width: 1px;
+    }
+}
+
+/* positioning and style elements for online link */
+#tilbake_til_online a {
     position: absolute;
     z-index: 2;
     font-size: 10pt;
-
-}
-
-#tilbake_tekst{
-    color: #FAB657;
+    color: #fff;
+    text-decoration: none;
 }
 
 /* -----------------------------
         CSS CODE FOR CONTENT
    ----------------------------- */
+h1 {
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    font-size: 70;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
-
-   .button {
+.button {
     background-color: #0D5474;
     border-radius: 10px;
     border: none;
@@ -96,7 +117,7 @@ header a:hover {
     /* margin: 4px 2px; */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
     cursor: pointer;
-   }
+}
 
 /* -----------------------------
         CSS CODE FOR FOOTER
@@ -107,7 +128,7 @@ footer {
     width: 100%;
     height: 125px;
     background-color: #F1F1F1;
-    }
+}
 
 #footerFlex {
     width: 100%;
@@ -190,32 +211,74 @@ footer {
 
 
 
-    /* -----------------------------
+/* -----------------------------
         CSS CODE FOR OM OSS 
-   ----------------------------- */
+----------------------------- */
 
-   .avsnitt{
+.avsnitt{
     padding: 10px;
     width: 60vw;
     margin-left: 20vw;
-
- }
- #slideshow-container{
-  position: relative;
-  float:right;
-  width: 225px;
-  height: 299px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-right: 20vw;
-  margin-top: 40px;
-  margin-left: 20px;
- }
-
-  @media only screen and (max-width: 700px) {
-  #slideshow-container {
-    display: none;
 }
- }
+
+#slideshow-container{
+    position: relative;
+    float:right;
+    width: 225px;
+    height: 299px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 20vw;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    #slideshow-container {
+        display: none;
+}
+}
+
+/* -----------------------------
+        CSS CODE FOR GALLERI
+   ----------------------------- */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 1000px) {
+    .item {
+        flex: 0 0 33%;
+        width: 33%;
+        margin-bottom: 0.5%;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 760px) {
+    .item {
+        flex: 0 0 49.5%;
+        width: 49.5%;
+        margin-bottom: 1%;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .item {
+        flex: 0 0 99%;
+        width: 99%;
+        margin-bottom: 1%;
+        position: relative;
+    }
+}
+
+.container > div:hover {
+    transition: transform .2s;
+    transform: scale(1.01);
+    box-shadow: 0.1rem 0.1rem 0.1rem grey;
+  }
 
 /*-----------------------------
     CSS CODE FOR KONTAKT
@@ -288,3 +351,47 @@ footer {
         height: auto;
         bottom: 20px;
      }
+
+/* -----------------------------
+        CSS CODE FOR GALLERI
+   ----------------------------- */
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 1000px) {
+    .item {
+        flex: 0 0 33%;
+        width: 33%;
+        margin-bottom: 0.5%;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 760px) {
+    .item {
+        flex: 0 0 49.5%;
+        width: 49.5%;
+        margin-bottom: 1%;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .item {
+        flex: 0 0 99%;
+        width: 99%;
+        margin-bottom: 1%;
+        position: relative;
+    }
+}
+
+.container > div:hover {
+    transition: transform .2s;
+    transform: scale(1.01);
+    box-shadow: 0.1rem 0.1rem 0.1rem grey;
+  }
