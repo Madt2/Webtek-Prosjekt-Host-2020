@@ -1,22 +1,21 @@
 var headerHTML =
         '<header>'+
-            '<p id="tilbake_til_online">'+
-                '<a href="https://online.ntnu.no/hobbygroups" id="tilbake_tekst">&#8592 Tilbake til Online</a></p>'+
-            '<div class="header">'+
-                '<div></div>'+
-                '<div><a href="om_oss.html">OM OSS</a></div>'+
-                '<div>|</div>'+
-                '<div><a href="galleri.html">GALLERI</a></div>'+
-                '<div>|</div>'+
-                '<div id="logo">'+
-                    '<a href="../img/1344d445-6f0a-4c74-ad5b-af874925558a.png">'+
-                    '<img src="../img/1344d445-6f0a-4c74-ad5b-af874925558a.png" alt="Logoen til Ontap" style="width: auto; height: 75px;"></div>'+
-                '<div>|</div>'+
-                '<div><a href="oppskrifter.html">OPPSKRIFTER</a></div>'+
-                '<div>|</div>'+
-                '<div><a href="kontakt.html">KONTAKT</a></div>'+
-                '<div></div>'+
-            '</div>'+
+        '<p id="tilbake_til_online">'+
+        '<a href="https://online.ntnu.no/hobbygroups">&#8592 Tilbake til Online</a></p>'+
+            '<nav>'+
+                '<ul>'+
+                    '<li><a href="om_oss.html">OM OSS</a></li>'+
+                    '<li class="skille"></li>'+
+                    '<li><a href="galleri.html">GALLERI</a></li>'+
+                    '<li class="skille"></li>'+
+                    '<li><a href="../img/1344d445-6f0a-4c74-ad5b-af874925558a.png">'+
+                        '<img id="logo" src="img/logo_tonne.png" alt="Logoen til Ontap" style="width: auto; height: 30px;"></a></li>'+
+                    '<li class="skille"></li>'+
+                    '<li><a href="oppskrifter.html">OPPSKRIFTER</a></li>'+
+                    '<li class="skille"></li>'+
+                    '<li><a href="kontakt.html">KONTAKT</a></li>'+
+                '</ul>'+
+            '</nav>'+
         '</header>';
 
  var footerHTML = 
