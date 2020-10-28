@@ -188,7 +188,36 @@ footer {
         justify-content: center;
     }}
 
- /*-----------------------------
+
+
+    /* -----------------------------
+        CSS CODE FOR OM OSS 
+   ----------------------------- */
+
+   .avsnitt{
+    padding: 10px;
+    width: 60vw;
+    margin-left: 20vw;
+
+ }
+ #slideshow-container{
+  position: relative;
+  float:right;
+  width: 225px;
+  height: 299px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 20vw;
+  margin-top: 40px;
+  margin-left: 20px;
+ }
+
+  @media only screen and (max-width: 700px) {
+  #slideshow-container {
+    display: none;
+}
+ }
+
+/*-----------------------------
     CSS CODE FOR KONTAKT
    ----------------------------- */
     .kontakt_content {
