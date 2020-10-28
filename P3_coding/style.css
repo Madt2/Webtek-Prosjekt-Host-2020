@@ -147,13 +147,13 @@ footer {
     margin-left: 20vw;
     margin-bottom: 25px;
 }
-#ettiket {
+.etikett {
     width: 160px;
     height: 180px;
     padding: 15px;
 }
 
-#beer-header {
+.beer-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
