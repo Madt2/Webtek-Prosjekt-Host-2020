@@ -6,12 +6,60 @@
     <title>Ontap</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .forside{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        #bakgrunn{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            filter: blur(5px);
+            z-index: 1;
+        }
+
+        #forside_logo{
+            position: absolute;
+            top: 10%;
+            left: 30%;
+            width: 40%;
+            z-index: 2;
+        }
+
+        #pil{
+            position: absolute;
+            animation: MoveUpDown 1.6s linear infinite;
+            top: 60%;
+            left: 46%;
+            width: 8%;
+            z-index: 2;
+        }
+
+        @-webkit-keyframes MoveUpDown {
+            0%, 100% {
+                top: 57%;
+            }
+            50% { 
+                top: 60%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class = "wrapper">
+        <div class="forside">
+            <img id="pil" src="../img/pilned.png" alt=" ">
+            <img id="forside_logo" src="../img/ontap_logo.png" alt="Ontap: Onlines bryggelaug">
+            <img id="bakgrunn" src="../img/forside_bakgrunn.png" alt="Ontap">
+        </div>
         <div id="header"></div>
-        <div id="bakgrunn" style="background-image:url(../img/forside_bakgrunn.png);">
+        <div class="content">
+        <h1 style="font-size: 60pt;">VELKOMMEN TIL ONTAP</h1>
+        </div>
         <div id="footer"></div>
     </div>
     <script src="scripts.js" onload="header_and_footer()"></script>
