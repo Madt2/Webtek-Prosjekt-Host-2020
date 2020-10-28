@@ -8,8 +8,8 @@ var headerHTML =
                     '<li class="skille"></li>'+
                     '<li><a href="galleri.html">GALLERI</a></li>'+
                     '<li class="skille"></li>'+
-                    '<li><a href="../img/1344d445-6f0a-4c74-ad5b-af874925558a.png">'+
-                        '<img id="logo" src="img/logo_tonne.png" alt="Logoen til Ontap" style="width: auto; height: 30px;"></a></li>'+
+                    '<li><a id="test" href="../img/1344d445-6f0a-4c74-ad5b-af874925558a.png">'+
+                        '<img id="logo" src="img/logo_tonne.png" alt="Logoen til Ontap" style="width: auto; height: 40px;"></a></li>'+
                     '<li class="skille"></li>'+
                     '<li><a href="oppskrifter.html">OPPSKRIFTER</a></li>'+
                     '<li class="skille"></li>'+
