@@ -1,7 +1,7 @@
 var headerHTML =
         '<header>'+
         '<p id="tilbake_til_online">'+
-        '<a href="https://online.ntnu.no/hobbygroups">&#8592 Tilbake til Online</a></p>'+
+        '<a href="https://online.ntnu.no/hobbygroups">&#8592; Tilbake til Online</a></p>'+
             '<nav>'+
                 '<ul>'+
                     '<li><a href="om_oss.html">OM OSS</a></li>'+
@@ -20,12 +20,9 @@ var headerHTML =
 
  var footerHTML = 
         '<footer>'+
-            '<div id="footer5">'+
-               '<h4><a href="#header">Tilbake til toppen</a></h4>'+
-            '</div>'+
             '<div id="footerFlex">'+
                '<div class="footer" id="footer_logo">'+
-                  '<img id="footer_logo_img" src="../img/1344d445-6f0a-4c74-ad5b-af874925558a.png" alt="Ontap-logo" height="100px">'+
+                  '<img id="footer_logo_img" src="../img/1344d445-6f0a-4c74-ad5b-af874925558a.png" alt="Ontap-logo" height="100">'+
                '</div>'+
                '<div class="footer" id="footer1">'+
                   '<h4>Laget av</h4>'+
@@ -40,7 +37,7 @@ var headerHTML =
                '<div class="footer" id="footer3">'+
                     '<h4>Slack</h4>'+
                     '<a href="https://onlinentnu.slack.com/archives/C357EQS3U" target="_blank">'+
-                        '<img src="../img/Slack.png" alt="Slack" height="40px" width="40px" >'+
+                        '<img src="../img/Slack.png" alt="Slack" height="40" width="40" >'+
                     '</a>'+
                 '</div>'+
                 '<div class="footer" id="footer4">'+
@@ -52,9 +49,32 @@ var headerHTML =
             '</div>'
         '</footer>';
 
+//Denne koden vil sette inn header og footer element på siden når den lastes inn for å slippe å repetere kode
 function header_and_footer() {
     document.getElementById('header').innerHTML = headerHTML;
     document.getElementById('footer').innerHTML = footerHTML;
 }
 
+//Hentet kode fra https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+//Denne koden vil gi en floating knapp som vil bringe brukeren til toppen av siden når den klikkes
+var scrollbutton = document.getElementById("topButton");
 
+// Når brukeren begynner å scrolle vil funksjonen for knappen aktiveres og knappen blir synlig
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    //Når brukeren har scrollet 20px vil knappen bli synlig
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollbutton.style.display = "block";
+    }
+    //Hvis brukeren er på toppen av siden vises ikke knappen
+    else {
+    scrollbutton.style.display = "none";
+    }
+}
+
+//Når knappen trykkes på flyttes viewen til toppen av siden
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

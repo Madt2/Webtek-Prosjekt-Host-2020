@@ -103,6 +103,15 @@ header nav a {
 /* -----------------------------
         CSS CODE FOR CONTENT
    ----------------------------- */
+
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 125px;
+    right: 30px;
+    z-index: 99;
+}
+
 h1 {
     font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
     font-size: 70;
@@ -148,13 +157,6 @@ footer {
 
 #footer_logo_img {
     border-radius: 50%;
-}
-
-#footer5 {
-    position: absolute;
-    right: 5px;
-    top: 0;
-    z-index: 1000;
 }
 
 
