@@ -51,8 +51,8 @@ var headerHTML =
 
 //Denne koden vil sette inn header og footer element på siden når den lastes inn for å slippe å repetere kode
 function header_and_footer() {
-    document.getElementById('header').innerHTML = headerHTML;
-    document.getElementById('footer').innerHTML = footerHTML;
+    document.getElementById('header').innerHTML = headerHTML; //Setter header HTML inn i div med id="header"
+    document.getElementById('footer').innerHTML = footerHTML; //Setter footer HTML inn i div med id="footer"
 }
 
 
