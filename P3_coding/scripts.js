@@ -95,5 +95,3 @@ function fyllaKommentar() {
     }
     
 }
-
-fyllaKommentar()
