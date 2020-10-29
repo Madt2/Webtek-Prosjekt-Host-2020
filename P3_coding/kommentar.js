@@ -8,8 +8,11 @@ function fyllaKommentar() {
         document.getElementById("kommentar").innerHTML = "PS: Du har et vors å rekke!"; // Kommentar som vises når klokken er mellom 14:00 og 18:00
     }
     
-    else if (time < 6 && time > 18) {
+    else if (time >= 18) {
         document.getElementById("kommentar").innerHTML = "Håper du i dette øyeblikk nyter en hjemmebrygget enhet!"; // Kommentar som vises når klokken er mellom 18:00 og 06:00
     }
-    
+
+    else if (time > 0 && time < 6){
+        document.getElementById("kommentar").innerHTML = "Påtide å sove";  // Mellom 00:00 og 06:00
+    }
 }
