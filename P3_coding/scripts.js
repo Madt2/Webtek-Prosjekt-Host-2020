@@ -55,43 +55,5 @@ function header_and_footer() {
     document.getElementById('footer').innerHTML = footerHTML;
 }
 
-//Hentet kode fra https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-//Denne koden vil gi en floating knapp som vil bringe brukeren til toppen av siden når den klikkes
-var scrollbutton = document.getElementById("topButton");
-
-// Når brukeren begynner å scrolle vil funksjonen for knappen aktiveres og knappen blir synlig
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    //Når brukeren har scrollet 20px vil knappen bli synlig
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollbutton.style.display = "block";
-    }
-    //Hvis brukeren er på toppen av siden vises ikke knappen
-    else {
-    scrollbutton.style.display = "none";
-    }
-}
-
-//Når knappen trykkes på flyttes viewen til toppen av siden
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 
 
-function fyllaKommentar() {
-    var time = new Date().getHours();  // Henter inn tidspunktet på dagen 
-    if (time > 6 && time < 14) {
-        document.getElementById("kommentar").innerHTML = "Kjør dagsfylla?";  // Kommentar som vises når klokken er mellom 06:00 og 14:00
-    }
-    
-    else if (time > 14 && time < 18) {
-        document.getElementById("kommentar").innerHTML = "PS: Du har et vors å rekke!"; // Kommentar som vises når klokken er mellom 14:00 og 18:00
-    }
-    
-    else if (time < 6 && time > 18) {
-        document.getElementById("kommentar").innerHTML = "Håper du i dette øyeblikk nyter en hjemmebrygget enhet!"; // Kommentar som vises når klokken er mellom 18:00 og 06:00
-    }
-    
-}
