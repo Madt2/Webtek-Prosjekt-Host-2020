@@ -3,9 +3,11 @@
    <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="../img/ontap.ico" type="image/x-icon">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-        <title>Ontap Kontakt</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>Kontakt</title>
    </head>
    <body>
       <div class="wrapper">
@@ -35,9 +37,10 @@
                      <p>
                         Hvis du ønsker kontakt med oss, send gjerne en mail til:
                         <a href="mailto:ontap@online.ntnu.no">ontap@online.ntnu.no</a> 
-                        eller bruk skjema under:
+                        eller bruk skjema under: 
                      </p>
                   </div>
+                  <br><br>
                
                   <form id="kontakt_form" action="action.php" method="POST">
                      <label for="kontakt_fornavn"><b>Fornavn:</b></label>
@@ -56,9 +59,10 @@
                   </form>
                </div>
             </div>
+         <button class="button" onclick="topFunction()" id="topButton" title="Go to top">Til toppen</button>
          <div id="footer"></div>
       </div>
-         <script src="scripts.js" onload="header_and_footer()">
-         </script>
+      <script src="scripts.js" onload="header_and_footer()"></script>
+      <script src="Topbutton.js">window.onscroll = "scrollFunction()"</script>
    </body>
 </html>

@@ -3,17 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/ontap.ico" type="image/x-icon">
     <title>Ontap</title>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    <style>
-        .content {
-                margin-left: 20vw;
-                margin-right: 20vw;
-                margin-bottom: 50px;
-        }
-    </style>
 </head>
 <body>
     <div class = "wrapper">
@@ -31,7 +25,9 @@
             </ul>
         </div>
         <div id="footer"></div>
+        <button class="button" onclick="topFunction()" id="topButton" title="Go to top">Til toppen</button>
     </div>
     <script src="scripts.js" onload="header_and_footer()"></script>
+    <script src="Topbutton.js">window.onscroll = "scrollFunction()"</script>
 </body>
 </html>
