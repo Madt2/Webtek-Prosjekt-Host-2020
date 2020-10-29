@@ -109,7 +109,7 @@ header nav a {
     position: fixed;
     bottom: 125px;
     right: 30px;
-    z-index: 99;
+    z-index: 1;
 }
 
 h1 {
@@ -204,6 +204,59 @@ footer {
     justify-content: flex-end;
     width: 80vw;
     margin-bottom: 15px;
+}
+
+#FGlabel {
+    margin-right: 23px
+}
+/* Modal element, element for alkohol kalkulator å dukke opp i */
+.modal {
+    display: none; /* ikke synlig ved lasting av side */
+    position: fixed; /* Blir på midten uansett hvor på siden man er*/
+    z-index: 1; /* ligger over oppskriftsiden */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; /* Gjør at man kan scrolle ned siden hvis det trengs */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+  
+/* Element i modal for å holde selve alkohol formen */
+.alkohol_modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 10%;
+    padding: 5px;
+    border: 1px solid #888;
+    width: 30%;
+}
+  
+/* Krysse ut knapp */
+.alkohol_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/*dekorasjon */
+.alkohol_close:hover,
+.alkohol_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#alkohol_form {
+      width: max-content;
+      margin: 0 0 0 60px;
+}
+
+#alk_prosent {
+    margin-left: 20px;
 }
 
 @media only screen and (max-width: 1400px) {
