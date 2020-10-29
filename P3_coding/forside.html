@@ -73,10 +73,13 @@
         <h1 style="font-size: 45pt; padding-top: 10%;">VELKOMMEN TIL ONTAP</h1>
         <p class="forside_tekst">Linjeforeningen Onlines interessegruppe for brygging av øl</p>
         <br>
-        <div class="forside_tekst" id="kommentar"></div>
+        <div class="forside_tekst" id="kommentar">
+            <output id="kommentar_tekst" ></output>
+        </div>
         </div>
         <div id="footer"></div>
     </div>
-    <script src="scripts.js" onload="header_and_footer()" window.onscroll = "scrollFunction()" onload="fyllaKommentar()"></script>
+    <script src="scripts.js" onload="header_and_footer()" ></script>
+    <script src="kommentar.js" onload="fyllaKommentar()" ></script>
 </body>
 </html>
