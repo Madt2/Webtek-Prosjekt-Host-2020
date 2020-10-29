@@ -59,6 +59,25 @@ function header_and_footer() {
 //Denne koden vil gi en floating knapp som vil bringe brukeren til toppen av siden når den klikkes
 var scrollbutton = document.getElementById("topButton");
 
+
+function fyllaKommentar() {
+    var time = new Date().getHours();  // Henter inn tidspunktet på dagen 
+    if (time > 6 && time < 14) {
+        document.getElementById("demo").innerHTML = "Kjør dagsfylla?";  // Kommentar som vises når klokken er mellom 06:00 og 14:00
+    }
+    
+    else if (time > 14 && time < 18) {
+        document.getElementById("demo").innerHTML = "PS: Du har et vors å rekke!"; // Kommentar som vises når klokken er mellom 14:00 og 18:00
+    }
+    
+    else if (time < 6 && time > 18) {
+        document.getElementById("demo").innerHTML = "Håper du i dette øyeblikk nyter en hjemmebrygget enhet!"; // Kommentar som vises når klokken er mellom 18:00 og 06:00
+    }
+    
+}
+
+fyllaKommentar()
+
 // Når brukeren begynner å scrolle vil funksjonen for knappen aktiveres og knappen blir synlig
 window.onscroll = function() {scrollFunction()};
 
@@ -78,3 +97,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+

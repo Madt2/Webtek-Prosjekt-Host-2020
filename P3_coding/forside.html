@@ -42,6 +42,13 @@
             z-index: 2;
         }
 
+        #kommentar{    
+            font-size: 20pt;
+            text-align: center;
+
+        }
+
+
         @keyframes MoveUpDown {
             0%, 100% {
                 top: 39%;
@@ -61,10 +68,23 @@
         </div>
         <div id="header"></div>
         <div class="content">
+<<<<<<< HEAD
         <h1 style="font-size: 45pt; padding-top: 10%;">VELKOMMEN TIL ONTAP</h1>
+=======
+        <h1 style="font-size: 40pt;">VELKOMMEN TIL ONTAP</h1>
+        <p id="kommentar"></p>
+>>>>>>> 5bb9bf496115f3c5499c5e63f1803f8451540fbb
         </div>
         <div id="footer"></div>
     </div>
+
+    <script src="scripts.js" onload="header_and_footer()">
+    
+    
+    </script>
+
+    <button class="button" onclick="topFunction()" id="topButton" title="Go to top">Til toppen</button>
     <script src="scripts.js" onload="header_and_footer()" window.onscroll = "scrollFunction()"></script>
+
 </body>
 </html>
