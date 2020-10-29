@@ -309,10 +309,22 @@ footer {
 /* -----------------------------
         CSS CODE FOR GALLERI
    ----------------------------- */
-.container {
+.pageContainer {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 50px;
+}
+
+.imgContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.imgContainer > div:hover {
+    transition: transform .2s;
+    transform: scale(1.01);
+    box-shadow: 0.1rem 0.1rem 0.1rem grey;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -342,11 +354,86 @@ footer {
     }
 }
 
-.container > div:hover {
-    transition: transform .2s;
-    transform: scale(1.01);
-    box-shadow: 0.1rem 0.1rem 0.1rem grey;
-  }
+/* Darkend background for view mode */
+.modalbox {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* positioning of image in view mode */
+.modalbox-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 1200px;
+}
+
+/* The Close Button for view mode */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    transition: 0.6s ease;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+.close:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* original images hidden when not viewed */
+.slides {
+    display: none;
+}
+
+/* Next & prev buttons for view mode */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Number text (1/10) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
 
 /*-----------------------------
     CSS CODE FOR KONTAKT
