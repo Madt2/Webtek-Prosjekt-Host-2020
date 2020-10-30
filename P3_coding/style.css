@@ -1,8 +1,7 @@
 /* ----------------------------------------
         CSS CODE FOR FORMATING THE PAGE
    ---------------------------------------- */
- 
-* {
+ * {
     padding: 0;
     margin: 0;
 }
@@ -27,72 +26,65 @@ html{
         CSS CODE FOR HEADER
    ----------------------------- */
 
-/* Styling elements of navbar */
+/* Styling elementer i navbaren */
 header nav {
     background: #0D5474;
     font-family: "Source Sans Pro", "Source Serif Pro", Arial;
-    font-size: 15pt;
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem grey;
+    font-size: 13px;
+    box-shadow: 0.1rem 0.1rem 0.1rem grey;
 }
-
 header nav ul {
     list-style-type: none;
     padding: 0;
 }
-
 header nav a:hover {
     opacity: 75%;
 }
 
-/* positioning elements of navbar */
+/* Posisjonerings elementer i navbar */
 header nav .skille {
     display: none;
 }
-
 header nav a {
     text-decoration: none;
     text-align: center;
     color: #fff;
     display: block;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-
 #logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#test {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-}
-
-/* Defining new positioning of elements in navbar when screensize is over 760px */
-@media screen and (min-width: 760px){
-    /* Defining positioning of header-elements */
+/* Definerer ny posisjonering av elementer i navbaren når oppløsningen er bredere enn 1024px */
+@media screen and (min-width: 1024px){
+    /* Definerer posisjonering av header-elementer */
     header nav ul {
         align-items: center;
         display: flex;
         justify-content: center;
     }
-
     header nav li{
-        width: 20%;
+        width: 10%;
+    }
+    #logo_frame {
+        width: 15%;
     }
 
-    /* Styling of the separation elements */
+    /* Styling av skille elementene */
     header nav .skille {
         display: block;
         border-left: 1px solid #fff;
         padding: 0;
-        height: 30px;
+        height: 20px;
         width: 1px;
     }
 }
 
-/* positioning and style elements for online link */
+/* Posisjonerings og style elementer for online link */
 #tilbake_til_online a {
     position: absolute;
     z-index: 2;
@@ -121,9 +113,6 @@ h1 {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-/* h2 {
-    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
-} */
 
 .button {
     background-color: #0D5474;
@@ -320,26 +309,30 @@ footer {
 /* -----------------------------
         CSS CODE FOR GALLERI
    ----------------------------- */
+/* Posisjonering av thumbnail bildene */
 .pageContainer {
     margin-left: 20vw;
     margin-right: 20vw;
     margin-bottom: 50px;
 }
-
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+}
 .imgContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .imgContainer > div:hover {
-    transition: transform .2s;
-    transform: scale(1.01);
-    box-shadow: 0.1rem 0.1rem 0.1rem grey;
+    transition: transform .2s; /* Setter tid for transform animasjon */
+    transform: scale(1.01); /* Skalerer elementet til satt prosent */
+    box-shadow: 0.1rem 0.1rem 0.1rem grey; /* Legger skygge på elementet for å skape litt 3d effekt */
 }
 
-@media only screen and (min-width: 1000px) {
-    .item {
+/* Flex-posisjonering når bredden på oppløsningen er over 1024px */
+@media only screen and (min-width: 1024px) {
+    .thumbnail {
         flex: 0 0 33%;
         width: 33%;
         margin-bottom: 0.5%;
@@ -347,8 +340,9 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1080px) and (min-width: 760px) {
-    .item {
+/* Flex-posisjonering når bredden på oppløsningen er mellom 760px og 1024px */
+@media only screen and (max-width: 1024px) and (min-width: 760px) {
+    .thumbnail {
         flex: 0 0 49.5%;
         width: 49.5%;
         margin-bottom: 1%;
@@ -356,8 +350,9 @@ footer {
     }
 }
 
+/* Flex-posisjonering når bredden på oppløsningen er under 760px */
 @media only screen and (max-width: 760px) {
-    .item {
+    .thumbnail {
         flex: 0 0 99%;
         width: 99%;
         margin-bottom: 1%;
@@ -365,56 +360,59 @@ footer {
     }
 }
 
-/* Darkend background for view mode */
+/* Mørk bakgrunn for visnings-modus */
 .modalbox {
     display: none;
     position: fixed;
-    z-index: 2;
+    z-index: 2; /* flytter elementet frem til lag 3 */
     padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* positioning of image in view mode */
+/* Posisjoneringen av bildet i visnings-modus */
 .modalbox-content {
     position: relative;
     margin: auto;
     padding: 0;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: -moz-fit-content; /* Må legge til -moz- for at fit-content skulle funke i firefox */
+    width: fit-content; /* brukes til å få elementet til å passe størrelsen av child elementet */
     max-width: 1200px;
 }
+/* Størrelsen på bildet i visnings-modus */
+.slides img {
+    height: 80vh;
+    max-width: 80vw;
+}
 
-/* The Close Button for view mode */
+/* Styling og posisjonering av lukkeknappen til visnings-modus */
 .close {
+    cursor: pointer; /* Endrer musepeker til peker når musen er over elementet */
     color: white;
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 30px;
-    transition: 0.6s ease;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
+    transition: 0.3s ease; /* overgang til mørk bakgrunn bak knappene når pekeren hovrer over elementet (brukt i kombo med .prev:hover og .next:hover */
+    padding: 0 10px 3px 10px;
     border-radius: 3px 3px 3px 3px;
 }
 .close:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* original images hidden when not viewed */
+/* Setter de originale bildene skjult når visning modus ikke er i bruk */
 .slides {
     display: none;
 }
 
-/* Next & prev buttons for view mode */
+/* Neste & forrige knapper for visning modus */
 .prev,
 .next {
-    cursor: pointer;
+    cursor: pointer; /* Endrer musepeker til peker når musen er over elementet */
     position: absolute;
     top: 50%;
     width: auto;
@@ -423,10 +421,10 @@ footer {
     color: white;
     font-weight: bold;
     font-size: 20px;
-    transition: 0.6s ease;
+    transition: 0.3s ease; /* Overgang til mørk bakgrunn bak knappene når pekeren hovrer over elementet (brukt i kombo med .prev:hover og .next:hover */
     border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+    user-select: none; /* Gjør at brukeren ikke kan markere elementet */
+    -webkit-user-select: none; /* Må legge til -webkit- for at det skal funke i chrome */
 }
 .next {
     right: 0;
@@ -437,8 +435,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Number text (1/10) */
-.numbertext {
+/* Styling og posisjonering av bildetall */
+.nrOfNr {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -456,106 +454,63 @@ footer {
         align-items: center;  
      }
 
-     .kontakt_text {
+    .kontakt_text {
         height: 100%;
         width: 60%;
         position: relative;
         display: flex;
         flex-direction: column;
         z-index: 0;
-     }
+    }
 
      textarea {
         width: 100%;
         height: 300px;
-     }
+    }
 
-     .slack {
+    .slack {
         position: relative;
         display: flex;
         flex-direction: row;
         margin: 0 0 5% 0;
-     }
+    }
 
-     #slack_icon {
+    #slack_icon {
         margin-right: 10px;
-     }
+    }
 
-     #email_icon {
+    #email_icon {
         margin-right: 10px;
-     }
+    }
 
-     .email {
+    .email {
         position: relative;
         display: flex;
         flex-direction: row;
         margin: 0 0 2.5% 0;
-     }
+    }
 
-     .email > p {
+    .email > p {
         padding: 10px 0 0 0;
-     }
+    }
 
-     #kontakt_epost{
+    #kontakt_epost{
         padding: 5px 5px 5px 5px; 
-     }
+    }
 
-     #kontakt_fornavn{
+    #kontakt_fornavn{
         padding: 5px 5px 5px 5px; 
-     }
+    }
 
-     #kontakt_submit {
+    #kontakt_submit {
         margin: 5px 0 0 0;
-     }
+    }
 
-     #kontakt_form {
+    #kontakt_form {
         position: relative;
         align-self: center;
         width: 100%;
         height: auto;
         bottom: 20px;
-     }
-
-/* -----------------------------
-        CSS CODE FOR GALLERI
-   ----------------------------- */
-
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-@media only screen and (min-width: 1000px) {
-    .item {
-        flex: 0 0 33%;
-        width: 33%;
-        margin-bottom: 0.5%;
-        position: relative;
     }
-}
 
-@media only screen and (max-width: 1080px) and (min-width: 760px) {
-    .item {
-        flex: 0 0 49.5%;
-        width: 49.5%;
-        margin-bottom: 1%;
-        position: relative;
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    .item {
-        flex: 0 0 99%;
-        width: 99%;
-        margin-bottom: 1%;
-        position: relative;
-    }
-}
-
-.container > div:hover {
-    transition: transform .2s;
-    transform: scale(1.01);
-    box-shadow: 0.1rem 0.1rem 0.1rem grey;
-  }

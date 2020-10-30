@@ -8,7 +8,7 @@ var headerHTML = //HTML for headeren
                     '<li class="skille"></li>'+
                     '<li><a href="galleri.html">GALLERI</a></li>'+
                     '<li class="skille"></li>'+
-                    '<li><a id="test" href="forside.html">'+
+                    '<li id="logo_frame"><a href="forside.html">'+
                         '<img id="logo" src="img/logo_tonne.png" alt="Logoen til Ontap" style="width: auto; height: 40px;"></a></li>'+
                     '<li class="skille"></li>'+
                     '<li><a href="oppskrifter.html">OPPSKRIFTER</a></li>'+
@@ -18,7 +18,7 @@ var headerHTML = //HTML for headeren
             '</nav>'+
         '</header>';
 
- var footerHTML = //HTML for footeren
+var footerHTML = //HTML for footeren
         '<footer>'+
             '<div id="footerFlex">'+
                '<div class="footer" id="footer_logo">'+
