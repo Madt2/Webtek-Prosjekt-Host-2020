@@ -1,7 +1,9 @@
 var headerHTML = //HTML for headeren
         '<header>'+
         '<p id="tilbake_til_online">'+
-        '<a href="https://online.ntnu.no/hobbygroups">&#8592; Tilbake til Online</a></p>'+
+            '<a href="https://online.ntnu.no/hobbygroups">'+
+            '<img src="img/online.png" alt="Logoen til Ontap" style="width: auto; height: 40px;"</a>'+
+        '</p>'+
             '<nav>'+
                 '<ul>'+
                     '<li><a href="om_oss.html">OM OSS</a></li>'+
