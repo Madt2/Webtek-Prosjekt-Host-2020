@@ -130,7 +130,7 @@ h1 {
     border-radius: 10px;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 20px;
     text-align: center;
     font-size: 16px;
     /* margin: 4px 2px; */
@@ -178,6 +178,7 @@ footer {
     flex-direction: row;
     background-color: #f1f1f1;
     width: 60vw;
+    padding: 18x;
     margin-left: 20vw;
     margin-bottom: 25px;
     line-height: 25px;
@@ -235,9 +236,10 @@ footer {
     background-color: #fefefe;
     margin: auto;
     margin-top: 10%;
-    padding: 5px;
+    padding: 15px;
     border: 1px solid #888;
-    width: 30%;
+    width: 25%;
+    border-radius: 10px;
 }
   
 /* Krysse ut knapp */
@@ -259,13 +261,20 @@ footer {
 /*Bredde for alkohol kalkulator*/
 #alkohol_form {
       width: max-content;
-      margin: 0 0 0 60px;
+      margin-left: 3%;
+      padding: 20px;
 }
 
 #alk_prosent {
     margin-left: 20px;
+    font-size: 40px;
+    color: #0D5474;
+    margin-top: 10px;
 }
-
+#regnUt {
+    text-align-last: center;
+    padding-bottom: 8px;
+}
 @media only screen and (max-width: 1400px) {
     .outer, #alkoholknapp {
         width: 80%;
