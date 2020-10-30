@@ -1,6 +1,8 @@
 //Hentet kode fra https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 //Denne koden vil gi en floating knapp som vil bringe brukeren til toppen av siden når den klikkes
 
+window.onscroll = function() {scrollFunction()};
+
 var scrollbutton = document.getElementById("topButton"); //Henter en gjemt knapp på siden
 
 window.onscroll = function() {scrollFunction()}; // Når brukeren begynner å scrolle vil funksjonen for knappen aktiveres og knappen blir synlig

@@ -1,4 +1,4 @@
-var headerHTML =
+var headerHTML = //HTML for headeren
         '<header>'+
         '<p id="tilbake_til_online">'+
         '<a href="https://online.ntnu.no/hobbygroups">&#8592; Tilbake til Online</a></p>'+
@@ -18,7 +18,7 @@ var headerHTML =
             '</nav>'+
         '</header>';
 
- var footerHTML = 
+ var footerHTML = //HTML for footeren
         '<footer>'+
             '<div id="footerFlex">'+
                '<div class="footer" id="footer_logo">'+
