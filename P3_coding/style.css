@@ -218,7 +218,7 @@ footer {
 /* Modal element, element for alkohol kalkulator å dukke opp i */
 .modal {
     display: none; /* ikke synlig ved lasting av side */
-    position: fixed; /* Blir på midten uansett hvor på siden man er*/
+    position: fixed; /* Blir på midten uansett hvor på siden man navigerer*/
     z-index: 1; /* ligger over oppskriftsiden */
     padding-top: 100px;
     left: 0;
@@ -256,6 +256,7 @@ footer {
     cursor: pointer;
 }
 
+/*Bredde for alkohol kalkulator*/
 #alkohol_form {
       width: max-content;
       margin: 0 0 0 60px;
