@@ -22,7 +22,7 @@ var headerHTML = //HTML for headeren
         '<footer>'+
             '<div id="footerFlex">'+
                '<div class="footer" id="footer_logo">'+
-                  '<img id="footer_logo_img" src="../img/1344d445-6f0a-4c74-ad5b-af874925558a.png" alt="Ontap-logo" height="100">'+
+                  '<img id="footer_logo_img" src="img/1344d445-6f0a-4c74-ad5b-af874925558a.png" alt="Ontap-logo" height="100">'+
                '</div>'+
                '<div class="footer" id="footer1">'+
                   '<h4>Laget av</h4>'+
@@ -37,7 +37,7 @@ var headerHTML = //HTML for headeren
                '<div class="footer" id="footer3">'+
                     '<h4>Slack</h4>'+
                     '<a href="https://onlinentnu.slack.com/archives/C357EQS3U" target="_blank">'+
-                        '<img src="../img/Slack.png" alt="Slack" height="40" width="40" >'+
+                        '<img src="img/Slack.png" alt="Slack" height="40" width="40" >'+
                     '</a>'+
                 '</div>'+
                 '<div class="footer" id="footer4">'+
