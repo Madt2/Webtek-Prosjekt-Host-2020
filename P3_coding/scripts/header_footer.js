@@ -22,10 +22,11 @@ var headerHTML = //HTML for headeren
             // HTML struktur for den store / vanlige navbaren:
             '<nav class="max_navbar">'+
                 //Logoen + link til Online:
-                '<p id="tilbake_til_online">'+
+                '<div id="tilbake_til_online">'+
                     '<a href="https://online.ntnu.no/hobbygroups">'+
-                        '<img class="logo" src="img/online.png" alt="Logoen til Ontap" style="width: auto; height: 40px;"></a>'+
-                '</p>'+
+                        '<img class="logo" src="img/online.png" alt="Logoen til Ontap" style="width: auto; height: 30px;"></a>'+
+                    '<p id="tilbake_text"><a href="https://online.ntnu.no/hobbygroups">&#8592; Tilbake til Online</a></p>'+
+                '</div>'+
                 // Listen med linker som er lenket til de forskjellige sidene, og skille mellom de:
                 '<ul>'+
                     '<li><a href="om_oss.html">OM OSS</a></li>'+
