@@ -12,6 +12,10 @@ function closeModalbox() {
 var slideIndex = 1;
 showSlides(slideIndex);
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
 // Funksjon for å gå til neste bilde eller forrige bilde. I HTML-en n satt til -1 når plusSlides(-1) og 1 når plusSlides(1). 
 function plusSlides(n) {
   showSlides(slideIndex += n);
