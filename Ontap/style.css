@@ -1,0 +1,552 @@
+/* ----------------------------------------
+        CSS CODE FOR FORMATING THE PAGE
+   ---------------------------------------- */
+ * {
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+.wrapper{
+    height: 100%;
+    padding-bottom: 200px;
+    font-family:'Roboto', sans-serif;
+
+}
+/* -----------------------------
+        CSS CODE FOR HEADER
+   ----------------------------- */
+/* Styling elementer i navbaren */
+header nav {
+    background: #0D5474;
+    font-size: 13px;
+}
+header nav ul {
+    list-style-type: none;
+}
+header nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header nav a:hover {
+    opacity: 75%;
+}
+
+/* posisjonering av logoer */
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Setter den lille navbar (navbar når bredden er mindre enn 1024px) til flex til venstre */
+.min_navbar ul:first-child {
+    display: flex;
+    justify-content: left;
+}
+
+/* Styling av dropdown menyen i den lille navbaren */
+.min_navbar ul:nth-child(2) {
+    background-color: rgb(25,25,25)
+}
+.min_navbar ul:nth-child(2) li a{
+    border-color: white;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+/* Knapp i header */
+nav ul li button {
+    height: 60px;
+    width: 100px;
+    background-color: #0b4661;
+    color: white;
+    border: none;
+    outline: none; 
+    cursor: pointer;
+}
+
+/* Gjømmer full versjonen ("Desktop" versjonen) av headeren når skjermen er 1023px og nedover */
+@media screen and (max-width: 1023px){
+    .max_navbar {
+        display: none;
+    }
+}
+/* Definerer ny posisjonering av elementer i navbaren når oppløsningen er bredden er 1024px og opp */
+@media screen and (min-width: 1024px){
+    /* Gjømmer mini versjonen ("mobile" versjonen) av headeren når skjermen er 1024px og oppover */
+    .min_navbar {
+        display: none;
+    }
+    /* Definerer posisjonering av header-elementer */
+    header nav ul {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    header nav li{
+        width: 10%;
+    }
+    #logo_frame {
+        width: 15%;
+    }
+
+    /* Posisjonerings og style elementer for online link */
+    #tilbake_til_online a {
+    position: absolute;
+    z-index: 2;
+    padding: 10px;
+    }
+
+    /* Styling av skille elementene */
+    header nav .skille {
+        border-left: 1px solid #fff;
+        height: 20px;
+        width: 1px;
+    }
+}
+
+/* -----------------------------
+        CSS CODE FOR CONTENT
+   ----------------------------- */
+
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 125px;
+    right: 30px;
+    z-index: 1;
+}
+
+h1 {
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    font-size: 70;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.button {
+    background-color: #0D5474;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+/* -----------------------------
+        CSS CODE FOR FOOTER
+   ----------------------------- */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 125px;
+    background-color: #F1F1F1;
+}
+
+#footerFlex {
+    width: 100%;
+    height: 125px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer_logo_img {
+    border-radius: 50%;
+}
+
+.dropdown {
+    display: none;
+}
+/* -----------------------------
+    CSS CODE FOR OPPSKRIFTER
+   ----------------------------- */
+#info {
+    text-align: center;
+    list-style: inside;
+    margin-bottom: 10px;
+    /* font-style: 'Roboto', sans-serif; */
+}
+.outer {
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    width: 60vw;
+    padding: 18x;
+    margin-left: 20vw;
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+.etikett {
+    width: 150px;
+    height: 180px;
+    padding: 15px;
+}
+
+.beer-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.secondBlock{
+    margin-left: 100px;
+}
+
+#alkoholknapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 80vw;
+    margin-bottom: 15px;
+}
+
+#FGlabel {
+    margin-right: 23px
+}
+
+/* Modal element, element for alkohol kalkulator å dukke opp i */
+.modal {
+    display: none; /* ikke synlig ved lasting av side */
+    position: fixed; /* Blir på midten uansett hvor på siden man navigerer*/
+    z-index: 1; /* ligger over oppskriftsiden */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; /* Gjør at man kan scrolle ned siden hvis det trengs */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+  
+/* Element i modal for å holde selve alkohol formen */
+.alkohol_modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 10%;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 25%;
+    border-radius: 10px;
+}
+  
+/* Krysse ut knapp */
+.alkohol_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/*dekorasjon */
+.alkohol_close:hover,
+.alkohol_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Bredde for alkohol kalkulator*/
+#alkohol_form {
+      width: max-content;
+      margin-left: 3%;
+      padding: 20px;
+}
+
+#alk_prosent {
+    margin-left: 20px;
+    font-size: 40px;
+    color: #0D5474;
+    margin-top: 10px;
+}
+
+#regnUt {
+    text-align-last: center;
+    padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .outer, #alkoholknapp {
+        width: 80%;
+        margin-left: 10vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #alkoholknapp {
+        justify-content: center;
+    }
+}
+
+
+
+/* -----------------------------
+        CSS CODE FOR OM OSS 
+----------------------------- */
+
+.avsnitt{                               /* Alle avsnittene sin style */
+    padding: 10px;
+    width: 60vw;
+    margin-left: 20vw;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+#slideshow-container{                   /* Posisjoneringen av slideshowet */ 
+    position: relative;
+    float:right;
+    width: 225px;
+    height: 299px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /* Gir en fade rundt slideshowet */ 
+    margin-right: 20vw;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 700px) {    /* Når skjermen har en bredde på mindre enn 700 px så forsvinner slideshowet slik at det ikke dytter ned teksten */ 
+    #slideshow-container {
+        display: none;
+    }
+}
+
+/* -----------------------------
+        CSS CODE FOR GALLERI
+   ----------------------------- */
+/* Posisjonering av thumbnail bildene */
+.pageContainer {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 50px;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+.imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.imgContainer > div:hover {
+    transition: transform .2s; /* Setter tid for transform animasjon */
+    transform: scale(1.01); /* Skalerer elementet til satt prosent */
+    box-shadow: 0.1rem 0.1rem 0.1rem grey; /* Legger skygge på elementet for å skape litt 3d effekt */
+}
+
+/* Flex-posisjonering når bredden på oppløsningen er over 1024px */
+@media only screen and (min-width: 1024px) {
+    .thumbnail {
+        flex: 0 0 33%;
+        width: 33%;
+        margin-bottom: 0.5%;
+        position: relative;
+    }
+}
+
+/* Flex-posisjonering når bredden på oppløsningen er mellom 760px og 1024px */
+@media only screen and (max-width: 1024px) and (min-width: 760px) {
+    .thumbnail {
+        flex: 0 0 49.5%;
+        width: 49.5%;
+        margin-bottom: 1%;
+        position: relative;
+    }
+}
+
+/* Flex-posisjonering når bredden på oppløsningen er under 760px */
+@media only screen and (max-width: 760px) {
+    .thumbnail {
+        flex: 0 0 99%;
+        width: 99%;
+        margin-bottom: 1%;
+        position: relative;
+    }
+}
+
+/* Mørk bakgrunn for visnings-modus */
+.modalbox {
+    display: none;
+    position: fixed;
+    z-index: 2; /* flytter elementet frem til lag 3 */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Posisjoneringen av bildet i visnings-modus */
+.modalbox-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: -moz-fit-content; /* Må legge til -moz- for at fit-content skulle funke i firefox */
+    width: fit-content; /* brukes til å få elementet til å passe størrelsen av child elementet */
+    max-width: 1200px;
+}
+/* Størrelsen på bildet i visnings-modus */
+.slides img {
+    height: 80vh;
+    max-width: 80vw;
+}
+
+/* Styling og posisjonering av lukkeknappen til visnings-modus */
+.close {
+    cursor: pointer; /* Endrer musepeker til peker når musen er over elementet */
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    transition: 0.3s ease; /* overgang til mørk bakgrunn bak knappene når pekeren hovrer over elementet (brukt i kombo med .prev:hover og .next:hover */
+    padding: 0 10px 3px 10px;
+    border-radius: 3px 3px 3px 3px;
+}
+.close:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Setter de originale bildene skjult når visning modus ikke er i bruk */
+.slides {
+    display: none;
+}
+
+/* Neste & forrige knapper for visning modus */
+.prev,
+.next {
+    cursor: pointer; /* Endrer musepeker til peker når musen er over elementet */
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease; /* Overgang til mørk bakgrunn bak knappene når pekeren hovrer over elementet (brukt i kombo med .prev:hover og .next:hover */
+    border-radius: 0 3px 3px 0;
+    user-select: none; /* Gjør at brukeren ikke kan markere elementet */
+    -webkit-user-select: none; /* Må legge til -webkit- for at det skal funke i chrome */
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styling og posisjonering av bildetall */
+.nrOfNr {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*-----------------------------
+    CSS CODE FOR KONTAKT
+   ----------------------------- */
+.kontakt_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.kontakt_text {
+    height: 100%;
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+}
+
+.slack {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 5% 0;
+}
+
+#slack_icon {
+    margin-right: 10px;
+}
+
+#email_icon {
+    margin-right: 10px;
+}
+
+.email {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 2.5% 0;
+}
+
+.email > p {
+    padding: 10px 0 0 0;
+}
+
+#kontakt_epost{
+    padding: 5px 5px 5px 5px; 
+}
+
+#kontakt_fornavn{
+    padding: 5px 5px 5px 5px; 
+}
+
+#kontakt_submit {
+    margin: 5px 0 0 0;
+}
+
+#kontakt_form {
+    position: relative;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    bottom: 20px;
+}
+
