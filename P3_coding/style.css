@@ -201,6 +201,7 @@ footer {
     margin-bottom: 25px;
     line-height: 25px;
 }
+
 .etikett {
     width: 150px;
     height: 180px;
@@ -214,11 +215,13 @@ footer {
   margin-top: 15px;
   margin-left: 15px;
 }
+
 .text {
     display: flex;
     flex-direction: row;
     margin-left: 20px;
 }
+
 .secondBlock{
     margin-left: 100px;
 }
@@ -234,6 +237,7 @@ footer {
 #FGlabel {
     margin-right: 23px
 }
+
 /* Modal element, element for alkohol kalkulator å dukke opp i */
 .modal {
     display: none; /* ikke synlig ved lasting av side */
@@ -289,20 +293,24 @@ footer {
     color: #0D5474;
     margin-top: 10px;
 }
+
 #regnUt {
     text-align-last: center;
     padding-bottom: 8px;
 }
+
 @media only screen and (max-width: 1400px) {
     .outer, #alkoholknapp {
         width: 80%;
         margin-left: 10vw;
-    }}
+    }
+}
 
 @media only screen and (max-width: 900px) {
     #alkoholknapp {
         justify-content: center;
-    }}
+    }
+}
 
 
 
@@ -332,7 +340,7 @@ footer {
 @media only screen and (max-width: 700px) {    /* Når skjermen har en bredde på mindre enn 700 px så forsvinner slideshowet slik at det ikke dytter ned teksten */ 
     #slideshow-container {
         display: none;
-}
+    }
 }
 
 /* -----------------------------
@@ -476,70 +484,70 @@ footer {
 /*-----------------------------
     CSS CODE FOR KONTAKT
    ----------------------------- */
-    .kontakt_content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;  
-     }
+.kontakt_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
 
-    .kontakt_text {
-        height: 100%;
-        width: 60%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        z-index: 0;
-    }
+.kontakt_text {
+    height: 100%;
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
 
-     textarea {
-        width: 100%;
-        height: 300px;
-    }
+textarea {
+    width: 100%;
+    height: 300px;
+}
 
-    .slack {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        margin: 0 0 5% 0;
-    }
+.slack {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 5% 0;
+}
 
-    #slack_icon {
-        margin-right: 10px;
-    }
+#slack_icon {
+    margin-right: 10px;
+}
 
-    #email_icon {
-        margin-right: 10px;
-    }
+#email_icon {
+    margin-right: 10px;
+}
 
-    .email {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        margin: 0 0 2.5% 0;
-    }
+.email {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 2.5% 0;
+}
 
-    .email > p {
-        padding: 10px 0 0 0;
-    }
+.email > p {
+    padding: 10px 0 0 0;
+}
 
-    #kontakt_epost{
-        padding: 5px 5px 5px 5px; 
-    }
+#kontakt_epost{
+    padding: 5px 5px 5px 5px; 
+}
 
-    #kontakt_fornavn{
-        padding: 5px 5px 5px 5px; 
-    }
+#kontakt_fornavn{
+    padding: 5px 5px 5px 5px; 
+}
 
-    #kontakt_submit {
-        margin: 5px 0 0 0;
-    }
+#kontakt_submit {
+    margin: 5px 0 0 0;
+}
 
-    #kontakt_form {
-        position: relative;
-        align-self: center;
-        width: 100%;
-        height: auto;
-        bottom: 20px;
-    }
+#kontakt_form {
+    position: relative;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    bottom: 20px;
+}
 
