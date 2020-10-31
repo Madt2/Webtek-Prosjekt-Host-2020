@@ -25,41 +25,73 @@ html{
 /* -----------------------------
         CSS CODE FOR HEADER
    ----------------------------- */
-
 /* Styling elementer i navbaren */
 header nav {
     background: #0D5474;
-    font-family: "Source Sans Pro", "Source Serif Pro", Arial;
     font-size: 13px;
 }
 header nav ul {
     list-style-type: none;
-    padding: 0;
+}
+header nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 header nav a:hover {
     opacity: 75%;
 }
 
-/* Posisjonerings elementer i navbar */
-header nav .skille {
-    display: none;
-}
-header nav a {
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-#logo {
+/* posisjonering av logoer */
+.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Definerer ny posisjonering av elementer i navbaren når oppløsningen er bredere enn 1024px */
+/* Setter den lille navbar (navbar når bredden er mindre enn 1024px) til flex til venstre */
+.min_navbar ul:first-child {
+    display: flex;
+    justify-content: left;
+}
+
+/* Styling av dropdown menyen i den lille navbaren */
+.min_navbar ul:nth-child(2) {
+    background-color: #f1f1f1;
+}
+.min_navbar ul:nth-child(2) li a{
+    color: black;
+    border-color: black;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+/* Knapp i header */
+nav ul li button {
+    height: 60px;
+    width: 100px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    outline: none; 
+    cursor: pointer;
+}
+
+/* Gjømmer full versjonen ("Desktop" versjonen) av headeren når skjermen er 1023px og nedover */
+@media screen and (max-width: 1023px){
+    .max_navbar {
+        display: none;
+    }
+}
+/* Definerer ny posisjonering av elementer i navbaren når oppløsningen er bredden er 1024px og opp */
 @media screen and (min-width: 1024px){
+    /* Gjømmer mini versjonen ("mobile" versjonen) av headeren når skjermen er 1024px og oppover */
+    .min_navbar {
+        display: none;
+    }
     /* Definerer posisjonering av header-elementer */
     header nav ul {
         align-items: center;
@@ -73,21 +105,19 @@ header nav a {
         width: 15%;
     }
 
-    /* Styling av skille elementene */
-    header nav .skille {
-        display: block;
-        border-left: 1px solid #fff;
-        padding: 0;
-        height: 20px;
-        width: 1px;
-    }
-}
-
-/* Posisjonerings og style elementer for online link */
-#tilbake_til_online a {
+    /* Posisjonerings og style elementer for online link */
+    #tilbake_til_online a {
     position: absolute;
     z-index: 2;
     padding: 10px;
+    }
+
+    /* Styling av skille elementene */
+    header nav .skille {
+        border-left: 1px solid #fff;
+        height: 20px;
+        width: 1px;
+    }
 }
 
 /* -----------------------------
@@ -149,7 +179,9 @@ footer {
     border-radius: 50%;
 }
 
-
+.dropdown {
+    display: none;
+}
 /* -----------------------------
     CSS CODE FOR OPPSKRIFTER
    ----------------------------- */

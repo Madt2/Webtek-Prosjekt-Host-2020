@@ -1,17 +1,39 @@
 var headerHTML = //HTML for headeren
         '<header>'+
-        '<p id="tilbake_til_online">'+
-            '<a href="https://online.ntnu.no/hobbygroups">'+
-            '<img src="img/online.png" alt="Logoen til Ontap" style="width: auto; height: 40px;"</a>'+
-        '</p>'+
-            '<nav>'+
+            // HTML struktur for den lille navbaren:
+            '<nav class="min_navbar">'+
+                // Selve navbaren:
+                '<ul>'+
+                    '<li><button onclick="toggleMenu()">&#9776; Menu</button></li>'+
+                    '<li><a href="https://online.ntnu.no/hobbygroups">'+
+                            '<img class="logo" src="img/online.png" alt="Logoen til Ontap" style="width: auto; height: 40px;"></a></li>'+
+                    '<li><a href="forside.html">'+
+                            '<img class="logo" src="img/logo_tonne.png" alt="Logoen til Online" style="width: auto; height: 40px;"></a></li>'+
+                '</ul>'+
+                // Dropdown menyen som dukker opp når man trykker på menu knappen:
+                '<ul id="menu" class="dropdown">'+
+                    '<li><a href="om_oss.html">OM OSS</a></li>'+
+                    '<li><a href="galleri.html">GALLERI</a></li>'+
+                    '<li><a href="oppskrifter.html">OPPSKRIFTER</a></li>'+
+                    '<li><a href="kontakt.html">KONTAKT</a></li>'+
+                '</ul>'+
+            '</nav>'+
+
+            // HTML struktur for den store / vanlige navbaren:
+            '<nav class="max_navbar">'+
+                //Logoen + link til Online:
+                '<p id="tilbake_til_online">'+
+                    '<a href="https://online.ntnu.no/hobbygroups">'+
+                        '<img class="logo" src="img/online.png" alt="Logoen til Ontap" style="width: auto; height: 40px;"></a>'+
+                '</p>'+
+                // Listen med linker som er lenket til de forskjellige sidene, og skille mellom de:
                 '<ul>'+
                     '<li><a href="om_oss.html">OM OSS</a></li>'+
                     '<li class="skille"></li>'+
                     '<li><a href="galleri.html">GALLERI</a></li>'+
                     '<li class="skille"></li>'+
                     '<li id="logo_frame"><a href="forside.html">'+
-                        '<img id="logo" src="img/logo_tonne.png" alt="Logoen til Ontap" style="width: auto; height: 40px;"></a></li>'+
+                        '<img class="logo" src="img/logo_tonne.png" alt="Logoen til Ontap" style="width: auto; height: 40px;"></a></li>'+
                     '<li class="skille"></li>'+
                     '<li><a href="oppskrifter.html">OPPSKRIFTER</a></li>'+
                     '<li class="skille"></li>'+
