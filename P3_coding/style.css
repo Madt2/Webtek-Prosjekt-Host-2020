@@ -107,10 +107,25 @@ nav ul li button {
 
     /* Posisjonerings og style elementer for online link */
     #tilbake_til_online a {
-    position: absolute;
-    z-index: 2;
-    padding: 10px;
+        position: absolute;
+        z-index: 2;
+        padding: 10px;
+        margin-left: 5px;
     }
+    #tilbake_til_online a img{
+        margin-left: 10px;
+    }
+
+    #tilbake_text {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        margin-top: 27px;
+    }
+    #tilbake_text a{
+        color: #FAB657;
+    }
+
 
     /* Styling av skille elementene */
     header nav .skille {
