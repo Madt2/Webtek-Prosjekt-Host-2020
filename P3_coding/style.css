@@ -551,3 +551,66 @@ textarea {
     bottom: 20px;
 }
 
+/* -----------------------------
+        CSS CODE FOR FORSIDE 
+----------------------------- */
+
+.forside{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+#bakgrunn{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: blur(5px);
+    z-index: 1;
+}
+
+#forside_logo{
+    position: absolute;
+    top: 13%;
+    left: 30%;
+    width: 40%;
+    z-index: 2;
+}
+
+#pil{
+    position: absolute;
+    animation: MoveUpDown 1.6s linear infinite;
+    top: 72%;
+    left: 46%;
+    width: 8%;
+    z-index: 2;
+}
+
+#forside_h1{
+    font-size: 45pt;
+    padding-top: 10%;
+}
+
+.forside_tekst{    
+    font-size: 20pt;
+    text-align: center;
+    margin: auto;
+    width: 30ch;
+}
+
+#kommentar{
+    padding-bottom: 10%;
+}
+
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        top: 70%;
+    }
+    50% { 
+        top: 75%;
+    }
+}
