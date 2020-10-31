@@ -257,7 +257,7 @@ footer {
 .modal {
     display: none; /* ikke synlig ved lasting av side */
     position: fixed; /* Blir på midten uansett hvor på siden man navigerer*/
-    z-index: 1; /* ligger over oppskriftsiden */
+    z-index: 3; /* ligger over oppskriftsiden */
     padding-top: 100px;
     left: 0;
     top: 0;
