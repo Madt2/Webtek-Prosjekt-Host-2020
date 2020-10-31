@@ -310,7 +310,7 @@ footer {
         CSS CODE FOR OM OSS 
 ----------------------------- */
 
-.avsnitt{
+.avsnitt{                               /* Alle avsnittene sin style */
     padding: 10px;
     width: 60vw;
     margin-left: 20vw;
@@ -318,18 +318,18 @@ footer {
     line-height: 1.5;
 }
 
-#slideshow-container{
+#slideshow-container{                   /* Posisjoneringen av slideshowet */ 
     position: relative;
     float:right;
     width: 225px;
     height: 299px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /* Gir en fade rundt slideshowet */ 
     margin-right: 20vw;
     margin-top: 40px;
     margin-left: 20px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {    /* Når skjermen har en bredde på mindre enn 700 px så forsvinner slideshowet slik at det ikke dytter ned teksten */ 
     #slideshow-container {
         display: none;
 }
