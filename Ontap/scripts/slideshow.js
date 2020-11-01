@@ -1,10 +1,10 @@
 // Hentet litt inspirasjon fra: https://www.w3schools.com/howto/howto_js_slideshow.asp?fbclid=IwAR3NGenztebYw5Uj67xAitjNigw-jRRSI8qW8_fCANZqYkjKZqhDrwnU2fA
 
 const images = [
-    src = "./img/brygging_slide1.jpg",
-    src = "./img/brygging_slide2.jpg" ,
-    src = "./img/brygging_slide3.jpg", 
-    src = "./img/brygging_slide4.jpg"          //Bildene slideshowet skal bruke 
+    src = "img/brygging_slide1.jpg",
+    src = "img/brygging_slide2.jpg" ,
+    src = "img/brygging_slide3.jpg", 
+    src = "img/brygging_slide4.jpg"          //Bildene slideshowet skal bruke 
 ];
 
 var slideIndex = 0; // Gir en startverdi til slideshowet slik at dette kan kjøres 
