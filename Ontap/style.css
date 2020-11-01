@@ -279,7 +279,7 @@ footer {
     background-color: #fefefe;
     margin: auto;
     margin-top: 10%;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #888;
     width: fit-content;
     width: -moz-fit-content;
@@ -304,9 +304,10 @@ footer {
 
 /*Bredde for alkohol kalkulator*/
 #alkohol_form {
-      width: max-content;
-      margin-left: 3%;
-      padding: 20px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
 
 #alk_prosent {
