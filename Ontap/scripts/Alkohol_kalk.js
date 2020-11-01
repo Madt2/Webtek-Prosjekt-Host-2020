@@ -25,14 +25,18 @@ window.onclick = function(event) {
 
 //Kode for å regne ut alkoholvolum i prosent
 document.getElementById('alk_prosent_button').addEventListener("click", function alk_i_prosent(){ // Legger til funksjonen til "Alkohol i volum" knappen
-    var output = document.getElementById('alk_prosent'); // Henter output element fra oppskrifter.html
-   const OG_verdi = document.getElementById('OG_value').value; // Henter input verdi fra bruker for Original Gravity
-   const FG_verdi = document.getElementById('FG_value').value; // Henter input verdi fra bruker for Final Gravity
-   if (OG_verdi < FG_verdi) {                                  // Sjekker om Final Gravity er større enn Original Gravity da dette ikke funker for formelen
-       output.value = "FG verdi for stor"
-   }
-
+  var output = document.getElementById('alk_prosent'); // Henter output element fra oppskrifter.html
+  const OG_verdi = document.getElementById('OG_value').value; // Henter input verdi fra bruker for Original Gravity
+  const FG_verdi = document.getElementById('FG_value').value; // Henter input verdi fra bruker for Final Gravity
+  if (OG_verdi < 0 || FG_verdi < 0) {
+    output.value = "Verdi kan ikke være negativ"
+  }
+   
+  else if (OG_verdi < FG_verdi) {                                  // Sjekker om Final Gravity er større enn Original Gravity da dette ikke funker for formelen
+    output.value = "FG verdi for stor"
+  }
+    
    else {
-       output.value = ((OG_verdi - FG_verdi) * 105 * 1.25).toPrecision(3) + "%"; // Formel fått fra klient, kode vil regne ut alkohol i volum utifra oppgitt Original Gravity og Final Gravity
-   }
+    output.value = ((OG_verdi - FG_verdi) * 105 * 1.25).toPrecision(3) + "%"; // Formel fått fra klient, kode vil regne ut alkohol i volum utifra oppgitt Original Gravity og Final Gravity
+  }
 });
