@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="../img/ontap.ico" type="image/x-icon">
+        <link rel="icon" href="img/ontap.ico" type="image/x-icon">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <title>Om oss</title>
+        <title>Ontap Om Oss</title>
     
         
     </head>
@@ -17,15 +18,12 @@
             
 
             <h1>Om oss</h1>
+            <div id="slideshow-container"></div>  <!-- Lager plass til slideshowet -->  
 
-            <div id="slideshow-container"></div>
-
-          
             <div class="avsnitt">
             <h2>Historie</h2>
             <p>Interessegruppen On Tap ble startet mot slutten av 2017 da flere informatikere med interesse for å brygge øl manglet et tilbud. Det hele starten med en mail til Hovedstyret om pengestøtte, noe som ble innfridd, og dermed kunne de da 35 medlemme nyte godt av nytt bryggekit.
                 Aslak Hollund var med på å starte Ontap, og var leder frem til nåverende leder, Hjalti, overtok. 
-                
             </p>
             </div>
 
@@ -40,14 +38,14 @@
             <p>Våre planer for nærmeste framtid er å forbedre tilbudet vårt samtidig som vi bygger opp kompetansen hos medlemmene våre. Videre ønsker vi også å bli en ressurs for komiteene, i tilfelle de på et tidspunkt ønsker å benytte vår kompetanse for et av sine arrangementer eller prosjekter. </p>
             </div>
 
-            
-
         </div>
         <div id="footer">
         </div>
-
-      <script src= slideshow.js></script>
-      <script src="scripts.js" onload="header_and_footer()"></script>
+        <button class="button" onclick="topFunction()" id="topButton" title="Go to top">Til toppen</button> 
+      <script src="scripts/slideshow.js"></script>
+      <script src="scripts/header_footer.js" onload="header_and_footer()"></script>
+      <script src="scripts/Topbutton.js"></script>
+      <script src="scripts/menu.js"></script>
       </div>
     </body>
 </html>
