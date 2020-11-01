@@ -2,7 +2,7 @@
 
 const images = [
     src = "img/brygging_slide1.jpg",
-    src = "img/brygging_slide2.jpg" ,
+    src = "img/brygging_slide2.jpg",
     src = "img/brygging_slide3.jpg", 
     src = "img/brygging_slide4.jpg"          //Bildene slideshowet skal bruke 
 ];
@@ -40,6 +40,7 @@ function addImages() {
     imgContainer.setAttribute("class", "img-container");
     const img = document.createElement("img");
     img.src = images[i]; 
+    img.alt = "slideshow image"
     img.style = "width:100%; height: 100%;";     // "Scalen" bildene skal ha 
     imgContainer.append(img);
     container.append(imgContainer);    // Container inneholder fire ulike imgcontainere hvor imgcontainer er div'en som "holder" hvert enkelt bilde. 
