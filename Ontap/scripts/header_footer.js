@@ -4,7 +4,7 @@ var headerHTML = //HTML for headeren
             '<nav class="min_navbar">'+
                 // Selve navbaren:
                 '<ul>'+
-                    '<li><button onclick="toggleMenu()">&#9776; Menu</button></li>'+
+                    '<li><button onclick="toggleMenu()">&#9776; Meny</button></li>'+
                     '<li><a href="https://online.ntnu.no/hobbygroups">'+
                             '<img class="logo" src="img/online.png" alt="Logoen til Ontap" style="width: auto; height: 40px;"></a></li>'+
                     '<li><a href="forside.html">'+
