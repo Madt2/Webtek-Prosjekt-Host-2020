@@ -163,7 +163,6 @@ h1 {
     padding: 15px 20px;
     text-align: center;
     font-size: 16px;
-    /* margin: 4px 2px; */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
     cursor: pointer;
 }
@@ -191,6 +190,9 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+#footer {
+    font-weight:300;
+}
 
 .footer {
     padding: 10px;
@@ -206,37 +208,48 @@ footer {
 /* -----------------------------
     CSS CODE FOR OPPSKRIFTER
    ----------------------------- */
+
+/* sentrere informasjonstekst */
 #info {
     text-align: center;
     list-style: inside;
     margin-bottom: 10px;
-    /* font-style: 'Roboto', sans-serif; */
+    /* font-family:'Roboto'; */
+    font-weight:100;
 }
+
+/* style og plassering av hver oppsrifts-boks */
 .outer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* hver boks skal jegge seg under hverandre */
     background-color: #f1f1f1;
     width: 60vw;
     padding: 18x;
     margin-left: 20vw;
-    margin-bottom: 25px;
-    line-height: 25px;
+    margin-bottom: 25px; /* avstand mellom hver oppsrifts-boks */
 }
 
+#info p{
+    padding-bottom: 5px;
+}
+
+/* Størrelse og marg rund bildet i boksene */
 .etikett {
     width: 150px;
-    height: 180px;
+    height: 155px;
     padding: 15px;
 }
 
+/* Plassering av overskriften i hver oppskrisfts-boks */
 .beer-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* bruker column slik at innholdet i oppskrifts-boksen legger seg bortover */
   justify-content: center;
   margin-top: 15px;
   margin-left: 15px;
 }
 
+/* Legger teksten under hverandre */
 .text {
     display: flex;
     flex-direction: row;
@@ -247,6 +260,7 @@ footer {
     margin-left: 100px;
 }
 
+/* Plassering for alkoholkalkulator knappen */
 #alkoholknapp {
     display: flex;
     flex-direction: row;
@@ -345,7 +359,6 @@ footer {
     padding: 10px;
     width: 60vw;
     margin-left: 20vw;
-    font-family: "Roboto", Arial, sans-serif;
     line-height: 1.5;
 }
 
