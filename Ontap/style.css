@@ -29,6 +29,7 @@ html{
 header nav {
     background: #0D5474;
     font-size: 13px;
+    font-family: "Source Sans Pro";
 }
 header nav ul {
     list-style-type: none;
