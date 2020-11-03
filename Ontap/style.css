@@ -149,7 +149,6 @@ nav ul li button {
 
 h1 {
     font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
-    font-size: 70;
     font-weight: bold;
     text-align: center;
     padding-top: 50px;
@@ -225,7 +224,7 @@ footer {
     flex-direction: row; /* hver boks skal jegge seg under hverandre */
     background-color: #f1f1f1;
     width: 60vw;
-    padding: 18x;
+    padding: 18px;
     margin-left: 20vw;
     margin-bottom: 25px; /* avstand mellom hver oppsrifts-boks */
 }
