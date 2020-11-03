@@ -53,7 +53,9 @@ document.getElementById('alk_prosent_button').addEventListener("click", function
       output.style.fontSize = "20px"
     }
     else {
-      output.value += "%"
+      output.value += "%";
+      output.style.fontSize = "40px";
+      output.style.color = "#0D5474";
     }
   }
 });
