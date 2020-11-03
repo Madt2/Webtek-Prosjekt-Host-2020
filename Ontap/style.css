@@ -31,7 +31,7 @@ header nav {
     font-size: 13px;
     font-family: "Source Sans Pro";
 }
-header nav ul {
+header nav ul { 
     list-style-type: none;
 }
 header nav a {
@@ -239,6 +239,7 @@ footer {
     width: 150px;
     height: 155px;
     padding: 15px;
+    
 }
 
 /* Plassering av overskriften i hver oppskrisfts-boks */
@@ -316,6 +317,12 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+/* Inputboks størrelse */
+input[type=number] {
+  padding: 8px 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;   
+}
 
 /*Bredde for alkohol kalkulator*/
 #alkohol_form {
@@ -334,19 +341,33 @@ footer {
 
 #regnUt {
     text-align-last: center;
+    padding-top: 20px;
     padding-bottom: 8px;
 }
 
-@media only screen and (max-width: 1400px) {
+/* @media only screen and (max-width: 1000px) {
     .outer, #alkoholknapp {
-        width: 80%;
+        width: 80vw;
         margin-left: 10vw;
+    }
+} */
+
+@media only screen and (max-width: 1024px) {
+    #alkoholknapp {
+        justify-content: center;
+    }
+    .secondBlock {
+        margin-left: 20px;
+    }
+    .outer, #alkoholknapp {
+        width: 70vw;
+        margin-left: 15vw;
     }
 }
 
-@media only screen and (max-width: 900px) {
-    #alkoholknapp {
-        justify-content: center;
+@media only screen and (max-width: 800px) {
+    .etikett {
+        display: none;
     }
 }
 
