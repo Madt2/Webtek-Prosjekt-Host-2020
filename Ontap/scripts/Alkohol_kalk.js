@@ -30,13 +30,30 @@ document.getElementById('alk_prosent_button').addEventListener("click", function
   const FG_verdi = document.getElementById('FG_value').value; // Henter input verdi fra bruker for Final Gravity
   if (OG_verdi < 0 || FG_verdi < 0) {
     output.value = "Verdi kan ikke være negativ"
+    output.style.color = "#ff0000";
+    output.style.fontSize = "20px"
   }
    
   else if (OG_verdi < FG_verdi) {                                  // Sjekker om Final Gravity er større enn Original Gravity da dette ikke funker for formelen
     output.value = "FG verdi for stor"
+    output.style.color = "#ff0000";
+    output.style.fontSize = "20px"
   }
     
    else {
-    output.value = ((OG_verdi - FG_verdi) * 105 * 1.25).toPrecision(3) + "%"; // Formel fått fra klient, kode vil regne ut alkohol i volum utifra oppgitt Original Gravity og Final Gravity
+    output.value = ((OG_verdi - FG_verdi) * 105 * 1.25).toPrecision(3); // Formel fått fra klient, kode vil regne ut alkohol i volum utifra oppgitt Original Gravity og Final Gravity
+    if (output.value < 0) {
+      output.value = "Feil i verdier, prøv igjen";
+      output.style.color = "#ff0000";
+      output.style.fontSize = "20px"
+    }
+    else if (output.value > 20) {
+      output.value = "For høye verdier, prøv igjen";
+      output.style.color = "#ff0000";
+      output.style.fontSize = "20px"
+    }
+    else {
+      output.value += "%"
+    }
   }
 });
