@@ -4,7 +4,7 @@ var headerHTML = //HTML for headeren
             '<nav class="min_navbar">'+
                 // Selve navbaren:
                 '<ul>'+
-                    '<li><button onclick="toggleMenu()">&#9776; Menu</button></li>'+
+                    '<li><button onclick="toggleMenu()">&#9776; Meny</button></li>'+
                     '<li><a href="https://online.ntnu.no/hobbygroups">'+
                             '<img class="logo" src="img/online.png" alt="Logoen til Ontap" style="width: auto; height: 40px;"></a></li>'+
                     '<li><a href="forside.html">'+
@@ -47,7 +47,8 @@ var footerHTML = //HTML for footeren
         '<footer>'+
             '<div id="footerFlex">'+
                '<div class="footer" id="footer_logo">'+
-                  '<img id="footer_logo_img" src="img/1344d445-6f0a-4c74-ad5b-af874925558a.png" alt="Ontap-logo" height="100">'+
+                '<a href="forside.html">'+
+                  '<img id="footer_logo_img" src="img/1344d445-6f0a-4c74-ad5b-af874925558a.png" alt="Ontap-logo" height="100"></a>'+
                '</div>'+
                '<div class="footer" id="footer1">'+
                   '<h4>Laget av</h4>'+

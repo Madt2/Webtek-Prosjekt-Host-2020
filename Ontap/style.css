@@ -29,8 +29,9 @@ html{
 header nav {
     background: #0D5474;
     font-size: 13px;
+    font-family: "Source Sans Pro";
 }
-header nav ul {
+header nav ul { 
     list-style-type: none;
 }
 header nav a {
@@ -148,7 +149,6 @@ nav ul li button {
 
 h1 {
     font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
-    font-size: 70;
     font-weight: bold;
     text-align: center;
     padding-top: 50px;
@@ -163,7 +163,6 @@ h1 {
     padding: 15px 20px;
     text-align: center;
     font-size: 16px;
-    /* margin: 4px 2px; */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
     cursor: pointer;
 }
@@ -180,18 +179,23 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 125px;
     background-color: #F1F1F1;
 }
 
 #footerFlex {
     width: 100%;
-    height: 125px;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+#footer {
+    font-weight:300;
+}
+
+.footer {
+    padding: 10px;
 }
 
 #footer_logo_img {
@@ -204,37 +208,49 @@ footer {
 /* -----------------------------
     CSS CODE FOR OPPSKRIFTER
    ----------------------------- */
+
+/* sentrere informasjonstekst */
 #info {
     text-align: center;
     list-style: inside;
     margin-bottom: 10px;
-    /* font-style: 'Roboto', sans-serif; */
+    /* font-family:'Roboto'; */
+    font-weight:100;
 }
+
+/* style og plassering av hver oppsrifts-boks */
 .outer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* hver boks skal jegge seg under hverandre */
     background-color: #f1f1f1;
     width: 60vw;
-    padding: 18x;
+    padding: 18px;
     margin-left: 20vw;
-    margin-bottom: 25px;
-    line-height: 25px;
+    margin-bottom: 25px; /* avstand mellom hver oppsrifts-boks */
 }
 
+#info p{
+    padding-bottom: 5px;
+}
+
+/* Størrelse og marg rund bildet i boksene */
 .etikett {
     width: 150px;
-    height: 180px;
+    height: 155px;
     padding: 15px;
+    
 }
 
+/* Plassering av overskriften i hver oppskrisfts-boks */
 .beer-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* bruker column slik at innholdet i oppskrifts-boksen legger seg bortover */
   justify-content: center;
   margin-top: 15px;
   margin-left: 15px;
 }
 
+/* Legger teksten under hverandre */
 .text {
     display: flex;
     flex-direction: row;
@@ -245,6 +261,7 @@ footer {
     margin-left: 100px;
 }
 
+/* Plassering for alkoholkalkulator knappen */
 #alkoholknapp {
     display: flex;
     flex-direction: row;
@@ -277,7 +294,7 @@ footer {
     background-color: #fefefe;
     margin: auto;
     margin-top: 10%;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #888;
     width: fit-content;
     width: -moz-fit-content;
@@ -299,12 +316,19 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+/* Inputboks størrelse */
+input[type=number] {
+  padding: 8px 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;   
+}
 
 /*Bredde for alkohol kalkulator*/
 #alkohol_form {
-      width: max-content;
-      margin-left: 3%;
-      padding: 20px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
 
 #alk_prosent {
@@ -316,19 +340,33 @@ footer {
 
 #regnUt {
     text-align-last: center;
+    padding-top: 20px;
     padding-bottom: 8px;
 }
 
-@media only screen and (max-width: 1400px) {
+/* @media only screen and (max-width: 1000px) {
     .outer, #alkoholknapp {
-        width: 80%;
+        width: 80vw;
         margin-left: 10vw;
+    }
+} */
+
+@media only screen and (max-width: 1024px) {
+    #alkoholknapp {
+        justify-content: center;
+    }
+    .secondBlock {
+        margin-left: 20px;
+    }
+    .outer, #alkoholknapp {
+        width: 70vw;
+        margin-left: 15vw;
     }
 }
 
-@media only screen and (max-width: 900px) {
-    #alkoholknapp {
-        justify-content: center;
+@media only screen and (max-width: 800px) {
+    .etikett {
+        display: none;
     }
 }
 
@@ -342,7 +380,6 @@ footer {
     padding: 10px;
     width: 60vw;
     margin-left: 20vw;
-    font-family: "Roboto", Arial, sans-serif;
     line-height: 1.5;
 }
 
@@ -387,6 +424,25 @@ footer {
     box-shadow: 0.1rem 0.1rem 0.1rem grey; /* Legger skygge på elementet for å skape litt 3d effekt */
 }
 
+/* Flex-posisjonering når bredden på oppløsningen er under 760px */
+.thumbnail {
+    flex: 0 0 99%;
+    width: 99%;
+    margin-bottom: 1%;
+    position: relative;
+}
+
+
+/* Flex-posisjonering når bredden på oppløsningen er mellom 760px og 1024px */
+@media only screen and (min-width: 760px) {
+    .thumbnail {
+        flex: 0 0 49.5%;
+        width: 49.5%;
+        margin-bottom: 1%;
+        position: relative;
+    }
+}
+
 /* Flex-posisjonering når bredden på oppløsningen er over 1024px */
 @media only screen and (min-width: 1024px) {
     .thumbnail {
@@ -397,32 +453,12 @@ footer {
     }
 }
 
-/* Flex-posisjonering når bredden på oppløsningen er mellom 760px og 1024px */
-@media only screen and (max-width: 1024px) and (min-width: 760px) {
-    .thumbnail {
-        flex: 0 0 49.5%;
-        width: 49.5%;
-        margin-bottom: 1%;
-        position: relative;
-    }
-}
-
-/* Flex-posisjonering når bredden på oppløsningen er under 760px */
-@media only screen and (max-width: 760px) {
-    .thumbnail {
-        flex: 0 0 99%;
-        width: 99%;
-        margin-bottom: 1%;
-        position: relative;
-    }
-}
-
 /* Mørk bakgrunn for visnings-modus */
 .modalbox {
     display: none;
     position: fixed;
     z-index: 2; /* flytter elementet frem til lag 3 */
-    padding-top: 100px;
+    padding-top: 10vh;
     left: 0;
     top: 0;
     width: 100%;
@@ -441,7 +477,7 @@ footer {
 }
 /* Størrelsen på bildet i visnings-modus */
 .slides img {
-    height: 80vh;
+    max-height: 80vh;
     max-width: 80vw;
 }
 
@@ -523,6 +559,7 @@ footer {
 textarea {
     width: 100%;
     height: 300px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .slack {
@@ -553,23 +590,26 @@ textarea {
 
 #kontakt_epost{
     padding: 5px 5px 5px 5px; 
+    font-family: 'Roboto', sans-serif;
 }
 
 #kontakt_fornavn{
     padding: 5px 5px 5px 5px; 
+    font-family: 'Roboto', sans-serif;
 }
 
 #kontakt_submit {
     margin: 5px 0 0 0;
 }
 
-#kontakt_form {
+.kontakt_form {
     position: relative;
     align-self: center;
     width: 100%;
     height: auto;
     bottom: 20px;
 }
+
 
 /* -----------------------------
         CSS CODE FOR FORSIDE 
