@@ -70,7 +70,7 @@ var footerHTML = //HTML for footeren
                     '<h4>Sideoversikt</h4>'+
                     '<p>For å gå til sidekart,'+
                     '<br>'+ 
-                    'klikk her: <a href="index.html">Sidekart</a></p>'+
+                    'klikk her: <a href="sidekart.html">Sidekart</a></p>'+
                 '</div>'
             '</div>'
         '</footer>';
