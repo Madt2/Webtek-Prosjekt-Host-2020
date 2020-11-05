@@ -14,6 +14,7 @@
             <div id="header"></div>
             <div class="pageContainer">
                 <h1>Galleri</h1>
+                <!-- Thumbnailsene på galleri siden, aktiverer openModalbox() og currentSlide(n) (der n = indexen til bildet) når man klikker på thumbnailsene.-->
                 <div class="imgContainer">
                     <div class="thumbnail"><img alt="Thumbnailbilde av gjæringskar" src="img/MiniBilde1.jpg" onclick="openModalbox();currentSlide(1)"></div>
                     <div class="thumbnail"><img alt="Thumbnailbilde av flasker og kasser med Ontap brygget øl" src="img/MiniBilde2.jpg" onclick="openModalbox();currentSlide(2)"></div>
@@ -26,10 +27,14 @@
                     <div class="thumbnail"><img alt="Thumbnailbilde av flasking av øl" src="img/MiniBilde9.jpg" onclick="openModalbox();currentSlide(9)"></div>
                     <div class="thumbnail"><img alt="Thumbnailbilde av flasking av øl" src="img/MiniBilde10.jpg" onclick="openModalbox();currentSlide(10)"></div>
                 </div>
-
+                <!-- html koden for visningsmodusen -->
+                <!-- hentet insperasjon fra https://www.w3schools.com/howto/howto_js_slideshow.asp -->
                 <div id="currentModalbox" class="modalbox">
                     <div class="modalbox-content">
-                        <span class="close" onclick="closeModalbox()">&times;</span>
+                      <!-- Knappen for å lukke visningsmodus -->
+                      <span class="close" onclick="closeModalbox()">&times;</span>
+
+                        <!-- Orginalbildene som blir vist i visningsmodus -->
                         <div class="slides">
                             <div class="nrOfNr">1 / 10</div>
                             <img src="img/bilde1.jpg" alt="Bilde av gjæringskar">
@@ -80,13 +85,16 @@
                           <img src="img/bilde10.jpg" alt="Bilde av flasking av øl">
                         </div>
                       
+                      <!-- Knappen for å gå til neste bilde (next) og forrige bilde (prev) i visningsmodus -->
                       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
                       <script src="scripts/picture_view.js"></script>
                     </div>
                   </div>
             </div>
             <div id="footer"></div>
+            <!-- til toppen knappen -->
             <button class="button" onclick="topFunction()" id="topButton" title="Go to top">Til toppen</button>
         </div>
         <script src="scripts/header_footer.js" onload="header_and_footer()"></script>
